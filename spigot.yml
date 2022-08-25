@@ -31,7 +31,7 @@ settings:
   log-villager-deaths: true
   timeout-time: 60
   restart-on-crash: true
-  restart-script: ./baslat.sh
+  restart-script: ./start.sh
   netty-threads: 4
   debug: false
   attribute:
