@@ -19,5 +19,5 @@
 
 ### Others
 
-- [start.sh]()
+- [start.sh](https://github.com/xaprier/gaiacraft-minecraft/blob/master/start.sh)
   - My server SHELL start script which includes Aikar Flags for UNIX and Linux based OS with nogui.
