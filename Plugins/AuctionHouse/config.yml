@@ -1,0 +1,101 @@
+# 
+# AuctionHouse
+locale: en_us
+decimal_format: '#,##0.00'
+strict: false
+economy: vault
+chatHook: true
+updateTicks: 20
+auction:
+  listingPrice: 0.0
+  listingRate: 0.0
+  listingCooldown: 0d0h0m0s
+  listingDuration: 2d0h0m
+  expiredDuration: 3d0h0m
+  unclaimedDuration: 15d0h0m
+  cleanupDuration: 0d24h0m
+  soldDuration: 30d0h0m
+  unclaimedCheckDuration: 0d0h5m
+  unclaimedCheckOnWorldChange: true
+  preventCreative: true
+  preventSpectator: true
+  preventFilledContainers: false
+  minSellPrice: 10.0
+  maxSellPrice: 100000.0
+  salesTax: 5.0
+  maxSalesTax: 100000.0
+  allowDamagedItems: false
+  defaultMaxListings: 5
+  sortOrder: oldest
+  discord_channel: 'muzayedeler'
+  multiworld: false
+  groupWorlds: false
+  replaceUUIDs: false
+  replacePlayerNames: false
+  dropAtFeet: false
+  showSeconds: true
+  spawnerInfo: true
+  integerPrice: false
+  showRepairCost: true
+announce:
+  chat:
+    listings: false
+    purchases: false
+  action_bar:
+    listings: true
+    purchases: true
+  discord:
+    listings: true
+    purchases: true
+restricted_items:
+  '0':
+    item: minecraft:bedrock
+  '1':
+    item: minecraft:barrier
+  '2':
+    item: minecraft:command_block
+  '3':
+    item: minecraft:structure_block
+  mcmmo:
+    lore:
+    - mcMMO Ability Tool
+  mcmmo_ability:
+    persistent_data:
+      mcmmo:super_ability_boosted: 0
+sounds:
+  click: ui.button.click
+  fail: entity.villager.no
+  drop: entity.player.burp
+  sold: block.note_block.chime
+buttons:
+  exit: minecraft:iron_door
+  back: minecraft:iron_door
+  previous: minecraft:paper
+  sort_listings: minecraft:sunflower
+  next: minecraft:paper
+  info: minecraft:book
+  howto: minecraft:emerald
+  return_all: minecraft:flower_pot
+  player_listings: minecraft:diamond
+  expired_listings: minecraft:poisonous_potato
+  sold_items: minecraft:gold_ingot
+  clear: minecraft:barrier
+  confirm: minecraft:lime_stained_glass_pane
+  cancel: minecraft:red_stained_glass_pane
+triggers:
+  sign: 'Müzayede'
+  block_name: Auction House
+  entity_name: Auction House
+commands:
+  exit: msg %player% Müzayede evinden ayrılıyorsun
+log:
+  listed: true
+  sold: true
+  cancelled: true
+  returned: true
+  dropped: true
+  purged: true
+anticheat:
+  spam_check: true
+disabled-worlds: []
+configVersion: 33
