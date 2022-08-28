@@ -1,0 +1,72 @@
+name: AuctionHouse
+main: com.spawnchunk.auctionhouse.AuctionHouse
+version: '2.2.4'
+copyright: Copyright © 2017 spawnchunk.com
+author: klugemonkey
+softdepend: [Vault, HeadDatabase, DiscordSRV, TokenEnchant, PlaceholderAPI, MVdWPlaceholderAPI]
+api-version: "1.13"
+
+permissions:
+  auctionhouse.reload:
+    description: Enables the /auctionhouse reload command
+    default: false
+  auctionhouse.use:
+    description: Enables the /ah command
+    default: true
+  auctionhouse.menu:
+    description: Enables the /ah menu command
+    default: false
+  auctionhouse.search:
+    description: Enables the /ah search command
+    default: true
+  auctionhouse.sell:
+    description: Enables the /ah sell command
+    default: true
+  auctionhouse.selling:
+    description: Enables the /ah selling command
+    default: true
+  auctionhouse.sold:
+    description: Enables the /ah sold command
+    default: true
+  auctionhouse.trigger.block:
+    description: Enables triggering menu on interaction with named block
+    default: true
+  auctionhouse.trigger.entity:
+    description: Enables triggering menu on interaction with named entity
+    default: true
+  auctionhouse.trigger.sign:
+    description: Enables triggering menu on interaction with sign
+    default: true
+  auctionhouse.expired:
+    description: Enables the /ah expired command
+    default: true
+  auctionhouse.cancel:
+    description: Enables the /ah cancel command
+    default: true
+  auctionhouse.return:
+    description: Enables the /ah return command
+    default: true
+  auctionhouse.expire.others:
+    description: Enables expiring other's listing
+    default: false
+  auctionhouse.cancel.others:
+    description: Enables cancelling other's listing
+    default: false
+  auctionhouse.list:
+    description: Enables the /ah list command
+    default: false
+  auctionhouse.ulist:
+    description: Enables the /ah ulist command
+    default: false
+  auctionhouse.pick:
+    description: Enables picking items from the auction for inspection
+    default: false
+  auctionhouse.purge:
+    description: Enables the /ah purge <player> command
+    default: false
+
+commands:
+  ah:
+    aliases: [auction, auctionhouse, müzayede]
+    description: Müzayede için bütün komutlar
+    usage: "\u00a7cKullanım \u00a77» \u00a7e/müzayede yardım"
