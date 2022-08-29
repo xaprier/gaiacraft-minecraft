@@ -1,0 +1,156 @@
+# List of global tags:
+# %nl% - Goes to new line.
+# %username% - Replaces the username of the player receiving the message.
+# %displayname% - Replaces the nickname (and colors) of the player receiving the message.
+
+# Registration
+registration:
+  register_request: '%nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl%                      &6&l»      &6&lGaia&b&lCraft      &6&l«%nl% %nl% %nl%                     &b&l・     &cHesap Koruma     &b&l・%nl% %nl%   &6&l»  &eLütfen, &6/kayıt <şifre> <şifre>&e komutuyla kayıt olunuz!  &6&l« %nl% %nl%            &b&l・    &cKullandığınız şifreler eşsiz olsun!    &b&l・%nl% '
+  command_usage: '&eKullanım: &6/kaydol <şifre> <şifre>'
+  reg_only: '&2Sadece kaydolmuş oyuncular sunucuya giriş yapabilir! Kayıt olmak için lütfen &bGaiaCraft.Denince.biz&2 sitesinden kayıt olunuz!'
+  kicked_admin_registered: '&eYetkili seni kayıt etti; lütfen tekrardan giriş yapınız.'
+  success: '&aBaşarıyla kayıt olundu!'
+  disabled: '&cOyun içi kayıt devredışı!'
+  name_taken: '&cZaten bu kullanıcı adı kayıtlı!'
+
+# Password errors on registration
+password:
+  match_error: '&cŞifreler eşleşmiyor! Lütfen tekrar deneyin.'
+  name_in_password: '&cIsmini şifre olarak kullanamazsın, lütfen başka bir tane dene...'
+  unsafe_password: '&cSeçilen şifre güvenilir değil, lütfen başka bir tane dene...'
+  forbidden_characters: '&cŞifren geçersiz karakterler içeriyor. Izin verilen karakterler: %valid_chars'
+  wrong_length: '&cŞifren ya çok kısa ya çok uzun! Lütfen başka bir tane dene!'
+
+# Login
+login:
+  command_usage: '&eKullanım: &6/giriş <şifre>'
+  wrong_password: '&cYanlış şifre!'
+  success: '&aBaşarıyla giriş yapıldı!'
+  login_request: '%nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl% %nl%                      &6&l»      &6&lGaia&b&lCraft      &6&l«%nl% %nl% %nl%                     &b&l・     &cHesap Koruma     &b&l・%nl% %nl%        &6&l»  &eLütfen, &6/giriş <şifre>&e komutuyla giriş yapınız!  &6&l« %nl% %nl%            &b&l・    &cKullandığınız şifreler eşsiz olsun!    &b&l・%nl% '
+  timeout_error: '&cGiriş zamanı doldu! Daha hızlı giriş yapmayı dene'
+
+# Errors
+error:
+  unregistered_user: '&cBu kullanıcı kayıt olmamış!'
+  denied_command: '&cBu komutu gerçekleştirmek için önce giriş yapmalısın!'
+  denied_chat: '&cSohbet için önce giriş yapmalısın!'
+  not_logged_in: '&cHenüz giriş yapmadın!'
+  tempban_max_logins: '&cÇok fazla kez giriş yapamadığınız için geçici olarak yasaklandınız.'
+  max_registration: '&cBağlantınız için çok fazla sayıda &f(&e%reg_count/%max_acc %reg_names&f)&c kayıt oldunuz!'
+  no_permission: '&cBu eylemi gerçekleştirme izniniz yok!'
+  unexpected_error: '&cBeklenmeyen bir hata meydana geldi, lütfen yetkili ile iletişime geç!'
+  kick_for_vip: '&6Sunucu doluyken VIP oyuncu sunucuya giriş yaptı!'
+  logged_in: '&cZaten giriş yaptın!'
+  kick_unresolved_hostname: '&cBir hata oluştu: çözülmemiş oyuncu ana bilgisayar adı!'
+
+# AntiBot
+antibot:
+  kick_antibot: 'AntiBot koruma modu aktif! Sunucuya giriş yapmadan önce bir süre beklemelisin.'
+  auto_enabled: '&f[&2Bot-Koruma&&f]&a Bot-Koruma çok sayıda bağlantı nedeniyle aktifleştirildi!'
+  auto_disabled: '&f[&2Bot-Koruma&&f]&a Bot-Koruma %m dakika sonra kapanacak!'
+
+unregister:
+  success: '&aBaşarıyla kayıt silindi!'
+  command_usage: '&eKullanım: &6/kayıttsil <şifre>'
+
+# Other messages
+misc:
+  accounts_owned_self: '&b%count&e adet hesabın var:'
+  accounts_owned_other: '&6%name&e oyuncusu &b%count&e adet hesabı var:'
+  account_not_activated: '&cHesabın henüz aktifleştirilmedi, lütfen maillerini kontrol et!'
+  password_changed: '&aŞifre başarıyla değiştirildi!'
+  logout: '&aBaşarıyla çıkış yapıldı!'
+  reload: '&aAyarlar ve veritabanı başarıyla yenilendi!'
+  usage_change_password: '&eKullanım: &6/şifredeğiş <EskiŞifre> <YeniŞifre>'
+
+# Session messages
+session:
+  invalid_session: '&cIP Adresiniz değişti ve oturum süresi doldu!'
+  valid_session: '&aOturum süresinden otomatik olarak oturum açıldı.'
+
+# Error messages when joining
+on_join_validation:
+  name_length: '&cKullanıcı adın ya çok uzun ya çok kısa!'
+  characters_in_name: '&cKullanıcı adın geçersiz karakterler içeriyor. Izin verilen karakterler: %valid_chars'
+  country_banned: '&cGiriş yapılan ülke bu sunucuda yasaklı!'
+  not_owner_error: '&cBu hesabın sahibi sen değilsin. Lütfen başka bir kullanıcı adı gir!'
+  kick_full_server: '&cSunucu dolu, sonra tekrar dene!'
+  same_nick_online: '&cBu kullanıcı adına sahip oyuncu zaten sunucuda!'
+  invalid_name_case: '%valid kullanıcı adını kullanarak girmelisin, %invalid ile değil.'
+  same_ip_online: '&cAynı IP adresine sahip oyuncu zaten sunucuda!'
+  quick_command: '&cKomutu çok hızlı kullandın! Lütfen, sunucuya tekrar giriş yap ve komut girmeden önce biraz bekle.'
+
+# Email
+email:
+  usage_email_add: '&eKullanım: &6/eposta add <email> <email>'
+  usage_email_change: '&eKullanım: &6/eposta change <eskiemail> <yeniemail>'
+  new_email_invalid: '&cGeçersiz yeni e-posta, tekrar dene!'
+  old_email_invalid: '&cGeçersiz eski e-posta, tekrar dene!'
+  invalid: '&cGeçersiz e-posta adresi, tekrar dene!'
+  added: '&aE-posta adresi başarıyla hesabına eklendi!'
+  request_confirmation: '&eLütfen e-posta adresini onayla!'
+  changed: '&aE-posta adresiniz başarıyla değiştirildi!'
+  email_show: '&eŞuanki e-posta adresiniz: &f%email'
+  incomplete_settings: 'Hata: e-posta gönderimi için gerekli bütün ayarlar yapılandırılmamış. Lütfen yetkili ile iletiişime geçiniz.'
+  already_used: '&cE-posta adresi zaten kullanılıyor'
+  send_failure: '&cE-posta gönderilemedi. Lütfen yetkili ile iletişime geçiniz.'
+  no_email_for_account: '&aŞuanda bu hesapla ilişkili e-postanız yok.'
+  add_email_request: '&eLütfen &6/eposta add <e-posta> <e-posta>&e ile e-postanızı hesabınıza ekleyiniz.'
+  change_password_expired: '&eArtık bu komutu kullanarak şifrenizi değiştiremezsiniz.'
+  email_cooldown_error: '&cYakın zamanda zaten bir e-posta gönderildi. Yeni bir tane göndermeden önce %time beklemelisin.'
+  add_not_allowed: '&cE-posta eklemeye izin verilmiyor.'
+  change_not_allowed: '&cE-posta değiştirilmeye izin verilmiyor.'
+
+# Password recovery by email
+recovery:
+  forgot_password_hint: '&eŞifreni mi unuttun? &6/eposta recovery <E-posta>&e Komutuyla hesabını kurtarabilirsin.'
+  command_usage: '&eKullanım: &6/eposta recovery <E-posta>'
+  email_sent: '&aKurtarma e-postası zaten gönderildi! Lütfen e-posta kutunu kontrol et!'
+  code:
+    code_sent: '&aE-postana şifre sıfırlama kodun gönderildi.'
+    incorrect: '&cKurtarma kodu yanlış! Kalan deneme: &b%count.'
+    tries_exceeded: '&cKurtarma kodunu girmek için maksimum deneme sayısına ulaştınız. &eYeni bir tane oluşturmak için &6"/eposta recovery [email]"&e komutunu kullanın.'
+    correct: '&aKurtarma kodu doğru girildi!'
+    change_password: '&eLütfen şifreni hemen değiştirmek için &6/eposta setpassword <yeni şifre>&e komutunu kullan.'
+
+# Captcha
+captcha:
+  usage_captcha: '&eGiriş yapmak için bir doğrulama kodu girmelisiniz, &elütfen &6/kontrol %captcha_code &ekomutunu kullanarak doğrulamayı geçiniz.'
+  wrong_captcha: '&cYanlış doğrulama, &eLütfen sohbete &6"/kontrol %captcha_code"&e yazınız.'
+  valid_captcha: '&2Doğrulama kodu başarıyla doğrulandı!'
+  captcha_for_registration: '&eKayıt olmak için doğrulama kodunu doğrulamalısınız, lütfen &6/kontrol %captcha_code &ekomutunu kullanınız.'
+  register_captcha_valid: '&aDoğrulama kodu başarıyla doğrulandı! &eŞimdi &6/register <Şifre> <Şifre>&e komutuyla kayıt olabilirsin.'
+
+# Verification code
+verification:
+  code_required: '&eBu komut hassas ve e-posta doğrulaması gerektirir! Gelen kutusunu kontrol edin ve e-postadaki talimatları takip edin.'
+  command_usage: '&eKullanım: &6/doğrula <Kod>'
+  incorrect_code: '&cYanlış kod, &eLütfen e-postadan alınan kodu kullanarak sohbete &6"/doğrula <Kod>"&e komutunu yazınız.'
+  success: '&aKimliğin doğrulandı! Artık bütün komutları kullanabilirsiniz!'
+  already_verified: '&aZaten bütün komutları kullanabiliyorsunuz!'
+  code_expired: '&eKodunun süresi dolmuş! Yeni kod almak için başka bir hassas komut kullanın!'
+  email_needed: '&eKimliğinizi onaylamak için hesabınızı e-posta ile eşleştirmelisiniz!'
+
+# Two-factor authentication
+two_factor:
+  code_created: '&aGizli kodunuz &b%code. &eBuradan tarayabilirsiniz %url'
+  confirmation_required: '&eLütfen &6/2fa confirm <Kod>&e komutuyla kodu doğrulayınız'
+  code_required: '&eLütfen &6/2fa code <Kod>&e komutuyla iki faktörlü doğrulamayı geçiniz'
+  already_enabled: '&cIki faktörlü doğrulama hesabınız için zaten aktif!'
+  enable_error_no_code: '&cIki faktörlü doğrulama anahtarı bulunamadı. &eLütfen &6/2fa add&e komutunu kullanınız.'
+  enable_success: '&aHesabınız için başarıyla Iki faktörlü doğrulama etkinleştirildi'
+  enable_error_wrong_code: '&cYanlış kod veya süresi dolmuş. &eLütfen &6/2fa add&e komutunu kullanınız.'
+  not_enabled_error: '&eIki faktörlü doğrulama hesabınız için aktifleştirilmemiş. &6/2fa add&e komutunu kullanınız.'
+  removed_success: '&aHesabınızdan iki faktörlü doğrulama başarıyla kaldırıldı'
+  invalid_code: '&cGeçersiz kod!'
+
+# Time units
+time:
+  second: 'saniye'
+  seconds: 'saniye'
+  minute: 'dakika'
+  minutes: 'dakika'
+  hour: 'saat'
+  hours: 'saat'
+  day: 'gün'
+  days: 'gün'
