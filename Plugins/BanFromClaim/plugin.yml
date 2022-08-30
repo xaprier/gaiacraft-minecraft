@@ -1,0 +1,100 @@
+name: BanFromClaim
+version: 1.6.2
+authors: [Baktus_79]
+main: no.vestlandetmc.BanFromClaim.BfcPlugin
+description: Addon for GriefPrevention and GriefDefender that let you ban players from entering your claim.
+website: www.vestlandetmc.no
+prefix: BanFromClaim
+api-version: 1.13
+softdepend: [GriefPrevention, GriefDefender]
+commands:
+  banfromclaim:
+    description: "Tapunuzdan oyuncuyu yasaklar"
+    aliases:
+      - bfc
+      - banfc
+    permission: bfc.ban
+    permission-message: "§cIzniniz yetersiz."
+    usage: /<command> [oyuncu]
+  unbanfromclaim:
+    description: "Tapunuzdaki yasaklı oyuncuyu kaldırır"
+    aliases:
+      - ubfc
+      - unbanfc
+    permission: bfc.unban
+    permission-message: "§cIzniniz yetersiz."
+    usage: /<command> [oyuncu]
+  banfromclaimlist:
+    description: "Tapunuzdaki yasaklı oyuncuları listeler"
+    aliases:
+      - bfcl
+      - bfclist
+    permission: bfc.list
+    permission-message: "§cIzniniz yetersiz."
+    usage: /<command>
+  bfcsafespot:
+    description: "Yeni güvenli nokta ayarlar"
+    aliases:
+      - bfcs
+      - bfcsetsafe
+    permission: bfc.safespot
+    permission-message: "§cIzniniz yetersiz."
+    usage: /<command>
+  banfromclaimall:
+    description: "Herkes tapunuzdan yasaklanır"
+    aliases:
+      - bfca
+      - bfcall
+    permission: bfc.banall
+    permission-message: "§cIzniniz yetersiz."
+    usage: /<command>
+  kickfromclaim:
+    description: "Tapunuzdan oyuncuyu atar"
+    aliases:
+      - kfc
+      - kickfc
+    permission: bfc.kick
+    permission-message: "§cIzniniz yetersiz."
+    usage: /<command> [oyuncu]
+permissions:
+  bfc.admin:
+    description: Give you access to everything
+    default: op
+    children:
+      bfc.ban: true
+      bfc.unban: true
+      bfc.list: true
+      bfc.bypass: true
+      bfc.safespot: true
+      bfc.banall: true
+      bfc.kick: true
+  bfc.use:
+    description: Give you access to user commands
+    default: op
+    children:
+      bfc.ban: true
+      bfc.unban: true
+      bfc.list: true
+      bfc.banall: true
+      bfc.kick: true
+  bfc.ban:
+    description: Give you access to /bfc command
+    default: op
+  bfc.unban:
+    description: Give you access to /ubfc command
+    default: op
+  bfc.list:
+    description: Give you access to /bfcl command
+    default: op
+  bfc.bypass:
+    description: With bypass you can not be banned
+    default: op
+  bfc.safespot:
+    description: Set new safespot
+    default: op
+  bfc.banall:
+    description: Give you access to /bfca command
+    default: op
+  bfc.kick:
+    description: Give you access to /kfc command
+    default: op
