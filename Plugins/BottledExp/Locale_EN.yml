@@ -1,0 +1,78 @@
+Prefix: "&cXP&7-&6Sakla &7» "
+Nopermission: "&cBunun için izniniz yok!"
+NoPlayer: "&cBu isimde oyuncu bulunamadı!"
+MoreThanZero: "&cLütfen 0'dan büyük bir sayı belirtin"
+Self: "&cKendine XP gönderemezsin!"
+Reload: "&aAyarlar yenilendi!"
+Enchant: "&aBu büyü için [xp] XP harcadın"
+GotExp: "[xp] XP'niz var"
+Store:
+  Name: "&f|   &cXP&7-&6Sakla   &f|"
+  BottleLore: "&eDepolanan XP: &6[exp]"
+  ExpLoreColor: "&b"
+command:
+  help:
+    output:
+      usage: "&eKullanım: &6%usage%"
+      title: "&d&l&m===================&r &2XP&f-&2Sakla &d&l&m==================="
+  stats:
+    help:
+      info: "&eXP bilgini kontrol der"
+      args: "&c<Oyuncu>&7"
+    info:
+      feedback:
+        - "&cXP&7-&6Sakla &7» &eŞuanda &b[xp] &3XP &eve &b[level] &3leveliniz &evar"
+        - "&cXP&7-&6Sakla &7» &eSonraki level için &b[xpdelta] &eXP &eveya &b[bottles]
+          &eXP Şişesine &eihtiyacınız var"
+      Moneyfeedback: "&cXP&7-&6Sakla &7» &aBunun maaliyeti &b[money] &2TL"
+  until:
+    help:
+      info: "&eBelirlenen level için kaç şişeye ihtiyacınız olduğunu gösterir"
+      args: "&c<Level>&7"
+    info:
+      moreThan: "&cXP&7-&6Sakla &7» &cBelirlediğiniz sayı levelinizden fazla olmalı!"
+      feedback:
+        "&cXP&7-&6Sakla &7» &b[xp] &3XP&e veya &b[bottles]&3 XP Şişesine&e
+        ihtiyacınız var"
+      Moneyfeedback: "&cXP&7-&6Sakla &7» &aBunun maaliyeti &b[money] &2TL"
+  give:
+    help:
+      info: "&eBaşka oyuncuya XP verir"
+      args: "&c<Oyuncu> <Miktar>&7"
+    info:
+      noExp: "&cXP&7-&6Sakla &7» &cXP vermek için yeterli XP'niz yok"
+      sender:
+        "&cXP&7-&6Sakla &7» &6[name]&a oyuncusuna &b[amount] &3XP&a gönderdin
+        ve &b[lost]&3 XP &akaybettiniz"
+      receiver:
+        "&cXP&7-&6Sakla &7» &6[name]&a oyuncusundan &b[amount] &3XP&a aldınız
+        ve aktarım sırasında &b[lost]&3 XP &akaybettiniz"
+  eblock:
+    help:
+      info: "&eBaktığınız bloğa özel XP ayarlar"
+      args: "&7"
+    info:
+      created: "&cXP&7-&6Sakla &7» &aAyarlandı"
+      removed: "&cXP&7-&6Sakla &7» &cKaldırıldı"
+  reload:
+    help:
+      info: "&eAyarları yeniler"
+      args: "&7"
+  get:
+    help:
+      info: "&eXP'yi şişeler"
+      args: "&c<Miktar/max>&7"
+    info:
+      noExp: "&cXP&7-&6Sakla &7» &cYeterli XP'niz yok"
+      NoMoney: "&cXP&7-&6Sakla &7» &cYeterli paranız yok!"
+      NoItems: "&cXP&7-&6Sakla &7» &cYeterli XP şişeniz yok!"
+      Cost: "&cXP&7-&6Sakla &7» &3Işlem Maaliyeti: &b[cost]"
+      Order:
+        "&cXP&7-&6Sakla &7» &b[bottles]&a XP şişesi aldınız! &aGerekli &3XP&a
+        hesabınızdan alındı!"
+  store:
+    help:
+      info: "&eXP'yi şişede saklar"
+      args: "&c<XP/level-L/max>&7"
+    info:
+      converted: "&cXP&7-&6Sakla &7» &b[exp] &3XP&a'yi şişeye çevirdiniz!"
