@@ -1,0 +1,88 @@
+prefix: '&aMarket &7&l» '
+shopinfo: |-
+  &aMarket Bilgisi:
+  &cSahip: &6%owner
+  &cStok: &b%stock
+  &cEşya: &6%item
+shopinfo_buy: '&b%price&7 fiyata &6%amount&7 adet al'
+shopinfo_sell: '&b%price&7 fiyata &6%amount&7 adet sat'
+iteminfo: "&eEşya Bilgisi: &r"
+iteminfo_fullname: "&eTam Isim: &6%item"
+iteminfo_shopname: '&eMarket Tabelası: &6%item'
+iteminfo_repaircost: "&eTamir Ucreti: &6%cost"
+iteminfo_book: |-
+  &fKitap Başlığı: &7%title
+  &fKitap Yazarı: &7%author
+  &fKitap Sayfaları: &7%pages
+iteminfo_book_generation: "&cKitap Üretimi: &7%generation"
+iteminfo_lore: |-
+  &fAçıklama:
+  &r%lore
+METRICS: |-
+  &aMarket &fIstatistiği:
+  &cHesap Sayısı: &6%accounts
+  &cİşlem Ortalaması: &6%totalTransactions &f(&cAlım: &b%buyTransactions &cSatım: &b%sellTransactions&f)
+  &cTakas Ortalaması: &6%totalItems &f(&cAlınan: &b%boughtItems &cSatılan: &b%soldItems&f)
+ACCESS_DENIED: '&cBunun için izniniz yok!'
+TRADE_DENIED: '&cBu marketle alışveriş yapamazsınız!'
+TRADE_DENIED_ACCESS_PERMS: '&cİzniniz olan marketlerle alışveriş yapamazsınız!'
+TRADE_DENIED_CREATIVE_MODE: '&cYaratıcı moddayken alışveriş yapamazsınız!'
+NOT_ENOUGH_MONEY: '&cYeterli paranız yok!'
+NOT_ENOUGH_MONEY_SHOP: '&cMarket sahibinin yeterli parası yok!'
+CLIENT_DEPOSIT_FAILED: '&cHesabınıza para yatırılamadı!'
+SHOP_DEPOSIT_FAILED: '&cMarket sahibine para yatırılamadı!'
+NO_ECONOMY_ACCOUNT: '&cMarket sahibinin banka hesabı bulunamadı!'
+NO_BUYING_HERE: '&cBurda satın alamazsın!'
+NO_SELLING_HERE: '&cBurda satış yapamazsın!'
+NOT_ENOUGH_SPACE_IN_INVENTORY: '&cEnvanterinde yeterli yer yok!'
+NOT_ENOUGH_SPACE_IN_CHEST: '&cSandıkta yeterli yer yok!'
+NOT_ENOUGH_ITEMS_TO_SELL: '&cSatmak için yeterli eşyan yok!'
+NOT_ENOUGH_SPACE_IN_YOUR_SHOP: |-
+  [%price %item&7 market dolu!](&f%seller&7 satmaya çalıştı..
+  &7Dünya: &f%world
+  &7Konum: &f%x/%y/%z)
+NOT_ENOUGH_STOCK: '&cBu markette stok yok'
+NOT_ENOUGH_STOCK_IN_YOUR_SHOP: |-
+  [%price %item&7 marketinde stok yok!](&f%buyer&7 satın almaya çalıştı..
+  &7Dünya: &f%world
+  &7Konum: &f%x/%y/%z)
+YOU_BOUGHT_FROM_SHOP: "&6%owner&a oyuncusundan &e%item&a eşyasını &b%price&a fiyata aldınız."
+SOMEBODY_BOUGHT_FROM_YOUR_SHOP: |-
+  [&6%buyer&7, &c%item&7 eşyasını &b%price&7 fiyata aldı.]
+  &7Dünya: &f%world    
+  &7Konum: &f%x/%y/%z
+YOU_SOLD_TO_SHOP: '&e%item&a eşyasını &6%buyer&a oyuncusuna &b%price&a fiyata sattın.'
+SOMEBODY_SOLD_TO_YOUR_SHOP: |-
+  [&6%seller&7, &c%item&7 eşyasını &b%price&7 fiyata sattı.]
+  &7Dünya: &f%world
+  &7Konum: &f%x/%y/%z)
+YOU_CANNOT_CREATE_SHOP: '&cBu türden market oluşturamazsınız!'
+NO_CHEST_DETECTED: '&cSandık bulunamadı!'
+INVALID_SHOP_DETECTED: '&cBu market kullanılamaz!'
+INVALID_SHOP_PRICE: '&cBu marketin geçersiz fiyatı var!'
+INVALID_SHOP_QUANTITY: '&cBu marketin geçersiz miktarı var!'
+SELL_PRICE_HIGHER_THAN_BUY_PRICE: '&cSatış fiyatı, alış fiyatından yüksek!'
+SELL_PRICE_ABOVE_MAX: '&cSatış fiyatı maksimumdan fazla!'
+SELL_PRICE_BELOW_MIN: '&cSatış fiyatı minimumdan az!'
+BUY_PRICE_ABOVE_MAX: '&cAlış fiyatı maksimumdan fazla!'
+BUY_PRICE_BELOW_MIN: '&cAlış fiyatı minimumdan az!'
+CLICK_TO_AUTOFILL_ITEM: '&cBu markete satmak istediğiniz eşya ile sağ tıklayın!"'
+NO_ITEM_IN_HAND: '&cElinizde eşya yok!'
+PROTECTED_SHOP: '&eMarket &6LWC&e ile korundu!'
+PROTECTED_SHOP_SIGN: '&eMarket tabelası &6LWC&e ile korundu!'
+SHOP_CREATED: '&aMarket oluşturuldu'
+SHOP_FEE_PAID: '&b%amount&a depozito ödediniz!'
+SHOP_REFUNDED: '&b%amount%&a geri ödeme aldınız!'
+ITEM_GIVEN: '&6%player&a oyuncusuna &c%item&a eşyası verildi."'
+RESTRICTED_SIGN_CREATED: '&aTabela oluşturuldu!'
+PLAYER_NOT_FOUND: '&cOyuncu bulunamadı!'
+NO_PERMISSION: '&cBunun için izniniz yok!'
+INCORRECT_ITEM_ID: '&cGeçersiz eşya idsi belirttiniz!'
+INVALID_CLIENT_NAME: '&cKullanıcı adınız geçerli bir Minecraft ismi değil!'
+NOT_ENOUGH_PROTECTIONS: '&cKoruma oluşturulamıyor!'
+NO_SHOP_FOUND: '&cMarket bulunamadı!'
+CANNOT_CREATE_SHOP_HERE: '&cBurda market oluşturamazsınız!'
+TOGGLE_MESSAGES_OFF: "&aArtık marketinden bildirim almayacaksın."
+TOGGLE_MESSAGES_ON: "&aArtık marketinden bildirim alacaksın."
+TOGGLE_ACCESS_ON: "&aArtık marketlerden alışveriş yapamayacaksın."
+TOGGLE_ACCESS_OFF: "&aArtık marketlerden alışveriş yapabileceksin."
