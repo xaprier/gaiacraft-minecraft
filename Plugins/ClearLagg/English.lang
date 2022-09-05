@@ -1,0 +1,213 @@
+# version(1)
+# Welcome to Clearlag's language file! Here you can modify the various strings ClearLag uses to suit your language, or preference
+# -- NOTE: This is the format: '<key>({replaceables}...):<message>'
+# -- NOTE: The replaceables are replaced depending on order, not the actual key name. So you may customize the key names too!
+# -- NOTE: The { ... } symbols represent a message block. This is applicable anywhere you want... Do not include any characters with {, or }
+
+####----> Commands -->
+command.error.wrongUsage({usage},{name})=&cYanlış kullanım: &6/lagg {name} {usage}
+command.error.noPermission({name})=&6/lagg {name} &ckomutunu kullanma izniniz yok!
+command.error.onlyForPlayer()=&cBu komutu sadece oyuncular gerçekleştirebilir!
+
+##]-> /lagg
+command.lagg.nopermission()=&cIzniniz yetersiz!
+command.lagg.header()=&3-------------(&cClearLagg Komutları&3)-------------
+command.lagg.footer()=&3----------------------------------------------------
+command.lagg.helpline({name},{desc})= &4- &6/lagg &b{name} &f -  &e{desc}
+
+##]-> /lagg admin
+command.admin.name()=admin
+command.admin.desc()=(Clearlag Modüllerini Kontrol eder)
+command.admin.usage()=
+command.admin.enabledModules({moduleList})=&aAktif yenilenebilir modüller: &7{moduleList}
+command.admin.noReloadableFields({module})={module} &cmodülü yenilenebilir alan içermiyor!
+command.admin.notEnabled({module})=&cBu modül aktif ddeğil!
+command.admin.reload({module})=&6{module}&a modülü yenilendi!
+command.admin.failedReload({module})=&6{module}&c modülü yenilenemedi! 
+command.admin.invalidModule({argument})=&cGeçersiz modül: &6{argument}
+command.admin.enabledModules({modules})=&aAktif modüller: &6{modules}
+command.admin.stoppedModule({module})=&6{module}&a modülü &cdurduruldu&a!
+command.admin.startableModules({modules})=&aBaşlatılabilir modüller: &6{modules}
+command.admin.alreadyEnabled({module})=&cBu modül zaten aktif!
+command.admin.enabled({module})=&6{module}&a modülü aktifleştirildi!
+command.admin.moduleStatus({listeners},{commands},{tasks},{modules})={
+&3=--------------[&6-&3] &6&lModül Durumu &3[&6-&3]----------------=
+              &8[&7Gray = Disabled&8]   &8[&aGreen = Enabled&8]
+&6Dinleyiciler: {commands}
+&6Komutlar: {commands}
+&6Görevler: {tasks}
+&6Modüller: {modules}
+}
+command.admin.help()={
+&3=-------------[&6-&3] &6&lModül Komutları &3[&6-&3]---------------=
+&4  - &3/lagg admin &creload &b<module>
+&4  - &3/lagg admin &cstop &b<module>
+&4  - &3/lagg admin &cstart &b<module>
+&4  - &3/lagg admin &clist
+&3-----------------------------------------------------
+}
+
+##]-> /lagg area
+command.area.name()=area
+command.area.usage()=<radius>
+command.area.desc()=(Çevrenizdeki varlıkları temizler)
+command.area.error({arg})=&cGeçersiz parametre belirtildi&8: &e{arg}
+command.area.message({removed},{radius})=&aClearLag &7&l» &b{radius}&a mesafedesindeki &b{removed}&a adet varlık kaldırıldı!
+
+##]-> /lagg checkchunk
+command.checkchunk.name()=checkchunk
+command.checkchunk.usage()=
+command.checkchunk.desc()=(Displays chunk's entities)
+command.checkchunk.header()=&4*&3&m                            &8(&a&lChunk Bilgisi&8)&3&m                              &4*
+command.checkchunk.tilelist()=&3 Yerleştirilebilir Varlıklar&8:
+command.checkchunk.entitylist()=&3 Varlıklar&8:
+command.checkchunk.line({count},{type})=   &8- &ax{count} &7{type}
+command.checkchunk.footer()=&4*&3&m                                                                             &4*
+
+##]-> /lagg check
+command.check.name()=check
+command.check.usage()=[world1, world2...]
+command.check.desc()=(Dünyanızdaki varlıkları sayar
+command.check.invalidworld({arg})=&cGeçersiz dünya belirtildi&8: {arg}
+command.check.header()=&4*&3&m                          &8(&a&lSunucu Durumu&8)&3&m                           &4*
+command.check.printed({removed1},{mobs},{animals},{players},{chunks},{activehoppers},{inactivehoppers},{spawners},{uptime},{tps},{usedmemory},{maxmemory},{freememory})={
+&3   Yerdeki eşyalar: &b{removed1}
+&3   Yaşayan canavarlar: &b{mobs}
+&3   Yaşayan hayvanlar: &b{animals}
+&3   Yaşayan oyuncular: &b{players}
+&3   Yüklenen chunk: &b{chunks}
+&3   Aktif huniler: &b{activehoppers}
+&3   Çalışmayan huniler: &b{inactivehoppers}
+&3   Aktif spawnlayıcılar: &b{spawners}
+&3   Çalışma Süresi: &b{uptime}
+&3   Mevcut TPS: &b{tps}
+&3   RAM Kullanımı: &b{usedmemory}&7/&b{maxmemory} &7MB
+&3   Boş Bellek: &b{freememory} &7MB
+}
+command.check.footer()=&4*&3&m                                                                             &4*
+
+##]-> /lagg chunk
+command.chunk.name()=chunk
+command.chunk.usage()=[list-size]
+command.chunk.desc()=(Lag yapan chunkları bulur)
+command.chunk.header()=&7&m                           &7( &bEn büyük chunklar &7)&m                           "
+command.chunk.print({order},{world},{x},{z},{count})=&4{order}&7) &3Dünya ve konum: &b{world}  &3x: &b{x}  &3z: &b{z}  &3Varlık adedi: &b{count}
+
+##]-> /lagg clear
+command.clear.name()=clear
+command.clear.usage()=
+command.clear.desc()=(Dünyanızdaki varlıkları kaldırır)
+command.clear.message({count})=&aClearLag &7&l» &3{count}&a adet varlık kaldırıldı!
+
+##]-> /lagg gc
+command.gc.name()=gc
+command.gc.usage()=
+command.gc.desc()=(Garbage Collector çağırır)
+command.gc.message()=&aClearLag &7&l» &cHızlıca Garbage Collector isteniyor! &7(Uyarı: Java'nın Sanal Makinesi belleği efektif şekilde temizleyecektir. Sadece debug veya büyük heap temizliğini zorlamak için kullanın)
+
+##]-> /lagg halt
+command.halt.name()=halt
+command.halt.usage()=[on/off]
+command.halt.desc()=(Çoğu sunucu etkinliğini durdurur)
+command.halt.halted()=&aClearLag &7&l» &eSunucu aktivitesi &csınırlandırıldı&e!
+command.halt.unhalted()=&aClearLag &7&l» &eSunucu aktivite sınırlaması &ckaldırıldı&e!
+
+##]-> /lagg killmobs
+command.killmobs.name()=killmobs
+command.killmobs.usage()=
+command.killmobs.desc()=(Dünyanızdaki canavarları yok ededr)
+command.killmobs.message({count})=&aClearLag &7&l» &3{count} &eadet canavar kaldırıldı!
+
+##]-> /lagg profile
+command.profile.name()=profile
+command.profile.usage()=<sample-seconds> <sample-type>
+command.profile.desc()=(Gecikmeye neden olan olayları profile döker)
+command.profile.invalidtime({arg})=&cGeçersiz örnek zaman parametresi&8: &6{arg}
+command.profile.invalidprofiler({arg},{profilers})={
+&cGeçersiz Dökümcü Belirtildi&8: &6{arg}
+&cGeçerli Dökümcüler&8: &6{profilers}
+}
+command.profile.nosamples()=&cÖrnekleme süresinde hiçbir örnek kaydedilmedi
+command.profile.header()=&7&m                           &7( &bChunk Örnekleri &7)&m
+command.profile.line({listing},{world},{x},{z},{samples})=&4{listing}&7) &3Dünya ve konum: &b{world}&7, &3x: &b{x}&7, &3z: &b{z}   &3Örnek boyutu: &b{samples}
+command.profile.started({time})=&aClearLag &7&l» &eProfil dökümü başlatıldı, &3{time}&e saniye boyunca çalışacak.
+
+##]-> /lagg reload
+command.reload.name()=reload
+command.reload.usage()=
+command.reload.desc()=(ClearLagg ayarlarını yeniler)
+command.reload.begin()=&aClearLag &7&l» &eModülleri yenilemeye çalışılıyor...
+command.reload.successful()=&aClearLag &7&l» &aModüller yenilendi!
+
+##]-> /lagg samplememory
+command.samplememory.name()=samplememory
+command.samplememory.usage()=<sample-seconds>
+command.samplememory.desc()=(Bellek/GC kullanımını örneklendirir)
+command.samplememory.invalidinteger({arg})=&cGeçersiz tam sayı belirtildi&8: &6{arg}
+command.samplememory.begin({time})=&3{time}&a saniye boyunca bellek örnekleyici çalıştırılıyor
+command.samplememory.header()=&4*&3&m                       &8(&a&lBellek Saniye İstatistiği&8)&3&m                        &4*
+command.samplememory.memory({high},{average})={
+&aMemory (In MB):
+&3   Saniye başına en yüksek bellek kullanımı: &b{high}
+&3   Saniye başına ortalama bellek kullanımı: &b{average}
+}
+command.samplememory.gc({total},{highest},{lowest},{averagetime},{averageticks})={
+&aGarbage Collector (Milisaniyelere göre):
+&3   Toplam GC Tahsili (Milisaniye başına): &b{total}
+&3   En yüksek Garbage Collector zamanı: &b{highest}
+&3   En düşük Garbage Collector zamanı: &b{lowest}
+&3   Ortalama Garbage Collector zamanı: &b{averagetime}
+&3   Tahsiller arası ortalama Tick: &b{averageticks}
+}
+command.samplememory.notenoughtime()=&cGarbage Collector sonuçları için örnekleme süresi yetersiz
+
+##]-> /lagg sampleticks
+command.sampleticks.name()=sampleticks
+command.sampleticks.usage()=[ticksToSample] [raw/stats]
+command.sampleticks.desc()=(Sunucu ticklerini örnekler)
+command.sampleticks.start({threadname},{time})=&6{threadname}&a iş parçacığı üzerinde &b{time}&etick&a boyunca full-tick örnekleme başlatılıyor &7(Tahmin kesin değil)
+command.sampleticks.rawheader()=&cHam tick zamanlamaları: &7(Normal tick 0-50ms arasındadır)
+command.sampleticks.rawprint({time})=&8 - {time}
+command.sampleticks.print({large},{small},{average},{spikes})={
+&aTick-Istatistiği: &7(Normal tick 0-50ms arasındadır)
+&3   En büyük tick: {large}
+&3   En küçük tick: {small}
+&3   Ortalama tick: {average}
+&3   Zirve: {spikes}
+}
+
+##]-> /lagg tpchunk
+command.tpchunk.name()=tpchunk
+command.tpchunk.usage()=<x> <z> [world]
+command.tpchunk.desc()=(Chunka ışınlanır)
+command.tpchunk.begin()=&aClearLag &7&l» &eModülleri yenilemeye çalışılınıyor...
+command.tpchunk.successful()=&aClearLag &7&l» &aModüller yenilendi!
+command.tpchunk.invalidinteger({arg})=&cGeçersiz tam sayı belirtildi&8: &6{arg}
+command.tpchunk.invalidworld({arg})=&cDünya mevcut değil&8: &6{arg}
+command.tpchunk.teleported({x},{z})=&aClearLag &7&l» &aŞu chunka ışınlanılıyor: &3{x}&7, &3{z}
+
+##]-> /lagg tps
+command.tps.name()=tps
+command.tps.usage()=
+command.tps.desc()=(Sunucunun ortalama tick süresini hesaplar)
+command.tps.print({tps})=&aClearLag &7&l» &a{tps}
+
+##]-> /lagg unloadchunks
+command.unloadchunks.name()=unloadchunks
+command.unloadchunks.usage()=
+command.unloadchunks.desc()=(Kullanılmayan chunkları boşaltır)
+command.unloadchunks.print({chunks})=&aClearLag &7&l» &3{chunks} &aadet chunk boşaltıldı!
+
+##]-> /lagg memory
+command.memory.name()=memory
+command.memory.usage()=[tick-rate]
+command.memory.desc()=(Heap bilgisini gösterir)
+command.memory.message()=&aBellek havuzunda JVM yığıt örneklemesi başlatıldı
+command.memory.invalidinteger({arg})=&cGeçersiz oy oranı belirtildi&8: &6{arg}
+
+##]-> /lagg performance
+command.performance.name()=performance
+command.performance.usage()=[tick-rate]
+command.performance.desc()=(Sunucu performansını görüntüler)
+command.performance.message()=&3İş parçacığı örneklemesi başlatıldı (Daha fazla &1sleep&3 daha iyidir!)
+command.performance.invalidinteger({arg})=&cGeçersiz oy oranı belirtildi&8: &6{arg}
