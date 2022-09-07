@@ -1,0 +1,630 @@
+# Use a YAML editor like NotepadPlusPlus to edit this file.  
+# After editing, back up your changes before reloading the server in case you made a syntax error.  
+# Use dollar signs ($) for formatting codes, which are documented here: http://minecraft.gamepedia.com/Formatting_codes
+Messages:
+  RespectingClaims:
+    Text: §3Tapu §7§l» §cArtık tüm tapulara iznin yok.
+  IgnoringClaims:
+    Text: §3Tapu §7§l» §aArtık tüm tapulara iznin var.
+  SuccessfulAbandon:
+    Text: §3Tapu §7§l» §aTüm tapuların kaldırıldı. Artık toplam §b{0}§a tapu alanın
+      var.
+    Notes: '0: remaining blocks'
+  RestoreNatureActivate:
+    Text: §3Tapu §7§l» §aDoğayı restore etme modu aktif. Restore için sağ tıklayın,
+      durdurmak için §c/basicclaims§a yazabilirsin.
+  RestoreNatureAggressiveActivate:
+    Text: §3Tapu §7§l» §aAgresif mod aktif. Bunu saklamak istediğin yerin altında
+      kullanma! Doğayı agresif bir şekilde geri getirmek için sağ tıklayın, durdurmak
+      için §c/basicclaims§a yazabilirsin.
+  FillModeActive:
+    Text: §3Tapu §7§l» §aDoldurma modu §b{0}§a yarıçapı ile etkinleştirildi. Doldurulacak
+      alana sağ tıklayın.
+    Notes: '0: fill radius'
+  TransferClaimPermission:
+    Text: §3Tapu §7§l» §cBu komut için yönetim iznine sahip olmalısın.
+  TransferClaimMissing:
+    Text: §3Tapu §7§l» §cBurada tapu bulunamadı. Aktarmak istediğiniz tapuda bulunun.
+  TransferClaimAdminOnly:
+    Text: §3Tapu §7§l» §cBir oyuncuya yalnızca yönetim tapusu aktarılabilir.
+  PlayerNotFound2:
+    Text: §3Tapu §7§l» §cSon zamanlarda bu isme sahip hiçbir oyuncu giriş yapmadı.
+  TransferTopLevel:
+    Text: §3Tapu §7§l» §eYalnızca üst düzey tapular§f(§6alt bölümler değil§f)§e aktarılabilir.
+      Alt bölümün dışında durun ve tekrar deneyin.
+  TransferSuccess:
+    Text: §3Tapu §7§l» §aTapu transfer edildi.
+  TrustListNoClaim:
+    Text: §3Tapu §7§l» §cTapunun içinde olman gerekir.
+  ClearPermsOwnerOnly:
+    Text: §3Tapu §7§l» §cSadece tapu sahibi tüm izinleri temizleyebilir.
+  UntrustIndividualAllClaims:
+    Text: §3Tapu §7§l» §6{0}§a oyuncusunun tüm tapulardaki izni kaldırıldı. Belirli
+      tapuya ilişkin izin ayarlamak için, o tapu alanının içinde durun.
+    Notes: '0: untrusted player'
+  UntrustEveryoneAllClaims:
+    Text: §3Tapu §7§l» §aTüm tapularınızdaki izinler silindi. Belirli tapuya ilişkin
+      izin ayarlamak için o tapunun içinde durun.
+  NoPermissionTrust:
+    Text: §3Tapu §7§l» §cBurdaki izinleri düzenlemek için §6{0}§c oyuncusunun tapu
+      izinlerine sahip değilsin.
+    Notes: '0: claim owner''s name'
+  ClearPermissionsOneClaim:
+    Text: §3Tapu §7§l» §aBu tapudaki izinler temizlendi. Bütün tapulara ilişkin izinleri
+      ayarlamak için, bunların dışında durun.
+  UntrustIndividualSingleClaim:
+    Text: §3Tapu §7§l» §6{0}§a oyuncusunun bu tapudaki izni kaldırıldı. Bütün tapulara
+      ilişkin izin ayarlamak için, bunlarin dışında durun.
+    Notes: '0: untrusted player'
+  OnlySellBlocks:
+    Text: §3Tapu §7§l» §cTapu alanı sadece satılabilir, satın alınamaz.
+  BlockPurchaseCost:
+    Text: '§3Tapu §7§l» §eTapu birim alan fiyatı: §b{0}§e,  bakiyen: §b{1}'
+    Notes: '0: cost of one block; 1: player''s account balance'
+  ClaimBlockLimit:
+    Text: §3Tapu §7§l» §cTapu alan limitine ulaştın. Daha fazla satın alamazsın.
+  InsufficientFunds:
+    Text: '§3Tapu §7§l» §cYeterli paran yok. §eGerekli miktar: §b{0}§e, bakiyen: §b{1}'
+    Notes: '0: total cost; 1: player''s account balance'
+  PurchaseConfirmation:
+    Text: §3Tapu §7§l» §aHesabınızdan §b{0}§a TL kesildi. §aArtık §b{1}§a kullanılabilir
+      alanınız var.
+    Notes: '0: total cost; 1: remaining blocks'
+  OnlyPurchaseBlocks:
+    Text: §3Tapu §7§l» §cTapu alanı sadece satın alınabilir, satılamaz.
+  BlockSaleValue:
+    Text: §3Tapu §7§l» §eBirim tapu alanı §b{0}§e TL değerinde. §c{1}§e satılabilir
+      alanınız var.
+    Notes: '0: block value; 1: available blocks'
+  NotEnoughBlocksForSale:
+    Text: §3Tapu §7§l» §cSatmak için bu kadar çok tapu alanınız yok.
+  BlockSaleConfirmation:
+    Text: §3Tapu §7§l» §aHesabınıza §b{0}§a TL aktarıldı. §eArtık §b{1}§e kullanılabilir
+      alanınız var.
+    Notes: '0: amount deposited; 1: remaining blocks'
+  AdminClaimsMode:
+    Text: §3Tapu §7§l» §aYönetim tapusu modu aktif. Oluşturulan tapular ücretsiz ve
+      diğer yöneticiler tarafından düzenlenebilir.
+  BasicClaimsMode:
+    Text: §3Tapu §7§l» §aTemel tapulama moduna geri dönüldü.
+  SubdivisionMode:
+    Text: §3Tapu §7§l» §aAlt bölüm modu aktif. Mevcut tapularınızda alt bölümler oluşturmak
+      için küreğinizi kullanın. çıkmak için §c/basicclaims§a yazabilirsin.
+  SubdivisionVideo2:
+    Text: ''
+    Notes: 0:video URL
+  DeleteClaimMissing:
+    Text: §3Tapu §7§l» §cTapulanmamış.
+  DeletionSubdivisionWarning:
+    Text: §3Tapu §7§l» §eBu tapu alt bölümler içeriyor. Silmek istediğinden eminsen,
+      yeniden §c/tapusil§e yazınız.
+  DeleteSuccess:
+    Text: §3Tapu §7§l» §aTapu silindi.
+  CantDeleteAdminClaim:
+    Text: §3Tapu §7§l» §cYönetim tapusunu silmek için yeterli yetkiniz yok.
+  DeleteAllSuccess:
+    Text: §3Tapu §7§l» §6{0}§a oyuncusunun bütün tapuları silindi.
+    Notes: '0: owner''s name'
+  NoDeletePermission:
+    Text: §3Tapu §7§l» §cTapuları silmek için yeterli yetkiniz yok.
+  AllAdminDeleted:
+    Text: §3Tapu §7§l» §aBütün yönetim tapuları silindi.
+  AdjustBlocksSuccess:
+    Text: '§3Tapu §7§l» §6{0}§a oyuncusunun tapu alanı §b{1}§a olarak ayarlandı. §eYeni
+      toplam bonus alanı: §b{2}'
+    Notes: '0: player; 1: adjustment; 2: new total'
+  NotTrappedHere:
+    Text: §3Tapu §7§l» §eBurada inşa edebilirsiniz. Kendini kurtar.
+  RescuePending:
+    Text: §3Tapu §7§l» §b10§e saniye beklerseniz, dışarıya işınlanacaksınız. Lütfen
+      bekleyin.
+  NonSiegeWorld:
+    Text: §3Tapu §7§l» §cSaldırı burada devredışı.
+  AlreadySieging:
+    Text: §3Tapu §7§l» §eZaten bir saldırı içindesin.
+  NotSiegableThere:
+    Text: §3Tapu §7§l» §6{0}§c burası korumasız.
+    Notes: '0: defending player'
+  SiegeTooFarAway:
+    Text: §3Tapu §7§l» §cSaldırı yapmak için cok uzaktasınız.
+  NoSiegeDefenseless:
+    Text: §3Tapu §7§l» §eBu oyuncu savunmasız. Git başka birisini seç.
+  AlreadyUnderSiegePlayer:
+    Text: §3Tapu §7§l» §6{0}§e zaten saldırı altında. Partiye katıl!
+    Notes: '0: defending player'
+  AlreadyUnderSiegeArea:
+    Text: §3Tapu §7§l» §eBu bölge zaten saldırı altında. Partiye katıl!
+  NoSiegeAdminClaim:
+    Text: §3Tapu §7§l» §cSaldırı bu bölgede devredışı.
+  SiegeOnCooldown:
+    Text: §3Tapu §7§l» §eBu oyuncu veya tapu için hala bekleme süresindesin. Başka
+      kurban bul.
+  SiegeAlert:
+    Text: §3Tapu §7§l» §cSaldırı altındasın! Eğer sunucudan ayrılırsan, öleceksin.
+      §6{0} §coyuncusunu öldürmeli veya vazgeçmesini beklemeli ya da kaçmalısın.
+    Notes: '0: attacker name'
+  SiegeConfirmed:
+    Text: §3Tapu §7§l» §cSaldırı başlatıldı! Eğer sunucudan ayrılırsan, öleceksin.
+      §6{0} §coyuncusunu öldürmeli veya onu kovalamaktan vazgeçmelisin.
+    Notes: '0: defender name'
+  AbandonClaimMissing:
+    Text: §3Tapu §7§l» §eSilmek istediğin tapunun üstünde dur, ya da §c/tümtapusil§e
+      komutunu tercih edebilirsiniz.
+  NotYourClaim:
+    Text: §3Tapu §7§l» §cBurası sana ait değil.
+  DeleteTopLevelClaim:
+    Text: §3Tapu §7§l» §eAlt bölüm silmek için, içinde dur. Diğer türlü §c/abandontoplevelclaim
+      §ekullanarak bu tapuyu ve bütün alt bölümlerini silebilirsin.
+  AbandonSuccess:
+    Text: §3Tapu §7§l» §aTapu kaldırıldı. §eArtık §b{0}§e kullanılabilir tapu alanınız
+      var.
+    Notes: '0: remaining claim blocks'
+  CantGrantThatPermission:
+    Text: §3Tapu §7§l» §cKendinize sahip olmadığınız bir izin veremezsiniz.
+  GrantPermissionNoClaim:
+    Text: §3Tapu §7§l» §eIzin vermek istediğiniz tapunun içinde durunuz.
+  GrantPermissionConfirmation:
+    Text: §3Tapu §7§l» §6{0}§a oyuncusuna §c{2}§a tapusunda §b{1}§a izni verildi.
+    Notes: '0: target player; 1: permission description; 2: scope (changed claims)'
+  ManageUniversalPermissionsInstruction:
+    Text: §3Tapu §7§l» §eBütün tapularınızdaki yetkileri düzenlemek için, tapuların
+      dışında durunuz.
+  ManageOneClaimPermissionsInstruction:
+    Text: §3Tapu §7§l» §eBelirli bir tapuya ait yetkileri düzenlemek için, o tapunun
+      içinde durunuz.
+  CollectivePublic:
+    Text: the public
+    Notes: as in 'granted the public permission to...'
+  BuildPermission:
+    Text: Yapı Yapabilme
+  ContainersPermission:
+    Text: Chest vb. ve Hayvanlar
+  AccessPermission:
+    Text: Düğmeleri ve Kolları Kullan
+  PermissionsPermission:
+    Text: Yetkileri Yönet
+  LocationCurrentClaim:
+    Text: Bu Tapuda
+  LocationAllClaims:
+    Text: Bütün Tapularında
+  PvPImmunityStart:
+    Text: §3Tapu §7§l» §eEnvanterin boş olduğu sürece diğer oyuncuların saldırısından
+      korunursun.
+  SiegeNoDrop:
+    Text: §3Tapu §7§l» §cSaldırı altındayken eşya atamazsın.
+  DonateItemsInstruction:
+    Text: §3Tapu §7§l» §eElindeki itemi çekiliş yapmak istiyorsan, sandığa tekrardan
+      sol tıkla.
+  ChestFull:
+    Text: §3Tapu §7§l» §cBu sandık full.
+  DonationSuccess:
+    Text: §3Tapu §7§l» §aEşya sandığa transfer edildi!
+  PlayerTooCloseForFire2:
+    Text: §3Tapu §7§l» §cBaşka oyuncuya yakın bir ateş yakamazsın.
+  TooDeepToClaim:
+    Text: §3Tapu §7§l» §cBu sandık korunamıyor çünkü yeraltının çok altında. Taşımayı
+      düşünün.
+  ChestClaimConfirmation:
+    Text: §3Tapu §7§l» §eBu sandık korunuyor.
+  AutomaticClaimNotification:
+    Text: §3Tapu §7§l» §eBu sandık ve yakınındaki bloklar kırılmaktan ve çalınmasından
+      korunuyor.
+  UnprotectedChestWarning:
+    Text: §3Tapu §7§l» §cBu Sandık korunmuyor. Altın Kürek ile mevcut bir tapuyu büyütmek
+      veya yeni bir tane oluşturmayı düşünün.
+  ThatPlayerPvPImmune:
+    Text: §3Tapu §7§l» §cSavunmasız oyunculara zarar veremezsin.
+  CantFightWhileImmune:
+    Text: §3Tapu §7§l» §cPvP Koruması altındayken başkasıyla savaşamazsın.
+  NoDamageClaimedEntity:
+    Text: §3Tapu §7§l» §aBurası §6{0}§a oyuncusuna ait.
+    Notes: '0: owner name'
+  ShovelBasicClaimMode:
+    Text: §3Tapu §7§l» §aKürek temel tapulama moduna döndürüldü.
+  RemainingBlocks:
+    Text: §3Tapu §7§l» §eŞuan §b{0}§e alanlık tapulama hakkınız var.
+    Notes: '0: remaining blocks'
+  CreativeBasicsVideo2:
+    Text: §3Tapu §7§l» §eAlan tapulama yardımı için §c/claimbilgi
+    Notes: '{0}: video URL'
+  SurvivalBasicsVideo2:
+    Text: ''
+    Notes: '{0}: video URL'
+  TrappedChatKeyword:
+    Text: tuzak
+    Notes: When mentioned in chat, players get information about the /trapped command.
+  TrappedInstructions:
+    Text: §3Tapu §7§l» §eBaşkasının tapusunda sıkıştın mı? §c/trapped§e komutunu dene.
+  PvPNoDrop:
+    Text: §3Tapu §7§l» §cPvPdeyken eşya atamazsın.
+  SiegeNoTeleport:
+    Text: §3Tapu §7§l» §cSaldırı altındaki alanın dışına işınlanamazsınız.
+  BesiegedNoTeleport:
+    Text: §3Tapu §7§l» §cSaldırı altındaki alanın içine işınlanamazsınız.
+  SiegeNoContainers:
+    Text: §3Tapu §7§l» §cSaldırı altındayken sandık vb. şeylere erişim sağlayamazsınız.
+  PvPNoContainers:
+    Text: §3Tapu §7§l» §cPvPdeyken sandık vb. şeylere erişim sağlayamazsınız.
+  PvPImmunityEnd:
+    Text: §3Tapu §7§l» §eArtık diğer oyuncularla savaşabilirsin.
+  NoBedPermission:
+    Text: §3Tapu §7§l» §cUyumak için tapuda yeterli izniniz yok.
+    Notes: '0: claim owner'
+  NoWildernessBuckets:
+    Text: §3Tapu §7§l» §eKovaları yalnızca tapularınıza veya yeraltına dökebilirsiniz.
+  NoLavaNearOtherPlayer:
+    Text: §3Tapu §7§l» §6{0}§c oyuncusunun yakınına lav yerleştiremezsin.
+    Notes: '0: nearby player'
+  TooFarAway:
+    Text: §3Tapu §7§l» §cÇok uzak.
+  BlockNotClaimed:
+    Text: §3Tapu §7§l» §eBurası tapulanmamış.
+  BlockClaimed:
+    Text: §3Tapu §7§l» §aBurası §6{0}§a oyuncusuna ait.
+    Notes: '0: claim owner'
+  SiegeNoShovel:
+    Text: §3Tapu §7§l» §cSaldırı altındayken tapu küreğini kullanamazsın.
+  RestoreNaturePlayerInChunk:
+    Text: §3Tapu §7§l» §cGeri yüklenemedi. §6{0}§e oyuncusu bu chunkta.
+    Notes: '0: nearby player'
+  NoCreateClaimPermission:
+    Text: §3Tapu §7§l» §cArazi tapulama izniniz yok.
+  ResizeNeedMoreBlocks:
+    Text: §3Tapu §7§l» §cBu boyut için yeterli tapu alanınız yok. §b{0}§e alana ihtiyacınız
+      var.
+    Notes: '0: how many needed'
+  NoCreativeUnClaim:
+    Text: §3Tapu §7§l» §cBu arazideki tapuyu kaldıramazsın. §bSadece yeniden boyutlandırabilir
+      veya ek tapular oluşturabilirsin.
+  ClaimResizeSuccess:
+    Text: '§3Tapu §7§l» §aTapu yeniden boyutlandırıldı. §eKullanılabilir tapu alanı:
+      §b{0}'
+    Notes: '0: remaining blocks'
+  ResizeFailOverlap:
+    Text: §3Tapu §7§l» §cBurası yeniden boyutlandırılamıyor çünkü başka bir tapu ile
+      çakışıyor.
+  ResizeStart:
+    Text: §3Tapu §7§l» §eTapu yeniden boyutlandırılıyor. Yeni köşeyi sağ tıklayarak
+      belirtiniz.
+  ResizeFailOverlapSubdivision:
+    Text: §3Tapu §7§l» §eBurada bir alt bölüm oluşturamazsınız çünkü başka alt bölüm
+      ile çakışıyor. Silmek için §c/tapusil§e komutunu kullanabilir, veya yeniden
+      boyutlandırmak için tapulama küreğinizi kullanabilirsiniz.
+  SubdivisionStart:
+    Text: §3Tapu §7§l» §eAlt bölüm köşesi belirlendi! Küreğinizi bu yeni alt bölümün
+      karşı köşesinde yeniden kullanın.
+  CreateSubdivisionOverlap:
+    Text: §3Tapu §7§l» §cSeçtiğiniz alan başka bir alt bölümle çakışıyor.
+  SubdivisionSuccess:
+    Text: §3Tapu §7§l» §aAlt bölüm oluşturuldu!
+  CreateClaimFailOverlap:
+    Text: §3Tapu §7§l» §eBurada tapu oluşturamazsınız. Çünkü başka tapunuz ile çakışıyor.
+      Silmek için §c/tapusil§e komutunu kullanabilir, veya yeniden boyutlandırmak
+      için tapulama küreğinizi kullanabilirsiniz.
+  CreateClaimFailOverlapOtherPlayer:
+    Text: §3Tapu §7§l» §cBurada tapu oluşturamazsınız. Çünkü §6{0}§c oyuncusunun tapusu
+      ile çakışıyor.
+    Notes: '0: other claim owner'
+  ClaimsDisabledWorld:
+    Text: §3Tapu §7§l» §cArazi tapulama bu dünyada devredışı.
+  ClaimStart:
+    Text: §3Tapu §7§l» §eTapu köşesi belirlendi! Küreğinizi tapu köşesinin karşı köşesinde
+      tekrar kullanın. Iptal etmek için küreği elinizden bırakın.
+  NewClaimTooNarrow:
+    Text: §3Tapu §7§l» §cBu tapu alanı aşırı küçük. Her tapu en az §b{0}§c genişliginde
+      olmalıdır.
+    Notes: '0: minimum claim width'
+  CreateClaimInsufficientBlocks:
+    Text: §3Tapu §7§l» §cTüm alanı tapulamak için yeterli alanınız yok. §b{0}§e alan
+      daha gerekiyor.
+    Notes: '0: additional blocks needed'
+  AbandonClaimAdvertisement:
+    Text: §3Tapu §7§l» §eBaşka bir tapuyu silmek ve bazı blokları boşaltmak için §c/tapusil
+      §ekomutunu kullanabilirsiniz.
+  CreateClaimFailOverlapShort:
+    Text: §3Tapu §7§l» §cSeçtiğiniz alan başka bir tapu ile çakışıyor
+  CreateClaimSuccess:
+    Text: §3Tapu §7§l» §aTapu oluşturuldu! Arkadaşlarına izin vermek için §c/güven
+      <Oyuncu> §akomutunu kullanabilirsin.
+  SiegeWinDoorsOpen:
+    Text: §3Tapu §7§l» §eTebrikler! Düğmeler ve kollar geçici olarak açıldı§f(§b5§e
+      Dakika§f)
+  RescueAbortedMoved:
+    Text: §3Tapu §7§l» §cHareket ettin! Kurtarma iptal edildi.
+  SiegeDoorsLockedEjection:
+    Text: §3Tapu §7§l» §eYağma zamanı doldu! Claimden çıkarıldı.
+  NoModifyDuringSiege:
+    Text: §3Tapu §7§l» §cTapular saldırı altındayken düzenlenemez.
+  OnlyOwnersModifyClaims:
+    Text: §3Tapu §7§l» §eBu tapuyu sadece §6{0}§e düzenleyebilir.
+    Notes: '0: owner name'
+  NoBuildUnderSiege:
+    Text: §3Tapu §7§l» §eBu tapu §6{0}§e tarafından saldırı altında. Buraya kimse
+      yapı yapamaz.
+    Notes: '0: attacker name'
+  NoBuildPvP:
+    Text: §3Tapu §7§l» §cPvPdeyken tapulara yapı yapamazsın.
+  NoBuildPermission:
+    Text: §3Tapu §7§l» §cBuraya yapı yapmak için §6{0}§c oyuncusunun izinlerine sahip
+      değilsin.
+    Notes: '0: owner name'
+  NonSiegeMaterial:
+    Text: §3Tapu §7§l» §cBu materyal kırılamayacak kadar sert.
+  NoOwnerBuildUnderSiege:
+    Text: §3Tapu §7§l» §cSaldırı altındayken değişiklik yapamazsın.
+  NoAccessPermission:
+    Text: §3Tapu §7§l» §cBunu yapabilmek için §6{0}§c oyuncusunun izinlerine sahip
+      değilsin.
+    Notes: '0: owner name.  access permission controls buttons, levers, and beds'
+  NoContainersSiege:
+    Text: §3Tapu §7§l» §eBu tapu §6{0}§e tarafından saldırı altında. Burada kimse
+      artık sandık vb. şeylere erişim sağlayamaz.
+    Notes: '0: attacker name'
+  NoContainersPermission:
+    Text: §3Tapu §7§l» §cBunu yapabilmek için §6{0}§c oyuncusunun izinlerine sahip
+      değilsin.
+    Notes: '0: owner''s name.  containers also include crafting blocks'
+  OwnerNameForAdminClaims:
+    Text: Yönetici
+    Notes: as in 'You don't have an administrator's permission to build here.'
+  ClaimTooSmallForEntities:
+    Text: §3Tapu §7§l» §eBu tapu bunun için yeterince büyük değil. Büyütmeyi deneyin.
+  TooManyEntitiesInClaim:
+    Text: §3Tapu §7§l» §eBu tapuda zaten cok fazla varlık var. Tapuyu büyütmeyi veya
+      bazı hayvanları, zararlı canavarları, resimleri veya vagonları kaldırmayı deneyin.
+  youhavenoclaims:
+    Text: §3Tapu §7§l» §eTapulu hiç araziniz yok.
+  ConfirmFluidRemoval:
+    Text: §3Tapu §7§l» §eBu tapuyu kaldırmak, tapunun içindeki lavları kaldıracaktir.
+      Eminseniz yeniden §c/tapusil§e komutunu kullanın.
+  AutoBanNotify:
+    Text: §3Tapu §7§l» §aOto Banlandı §6{0}§f(§b{1}§f)§a. Detaylar için logları kontrol
+      ediniz.
+  AdjustGroupBlocksSuccess:
+    Text: '§3Tapu §7§l» §c{0}§a iznine sahip oyuncular için eklenen alan §b{1}. §eYeni
+      toplam alan: §b{2}'
+    Notes: '0: permission; 1: adjustment amount; 2: new total bonus'
+  InvalidPermissionID:
+    Text: §3Tapu §7§l» §eLütfen bir oyuncu adı veya §a[parantez]§e içinde bir izin
+      belirtin.
+  HowToClaimRegex:
+    Text: ''
+    Notes: This is a Java Regular Expression.  Look it up before editing!  It's used
+      to tell players about the demo video when they ask how to claim land.
+  NoBuildOutsideClaims:
+    Text: §3Tapu §7§l» §cTapulamadan önce buraya yapı yapamazsın.
+  PlayerOfflineTime:
+    Text: '§3Tapu §7§l» §eSon giriş: §b{0}§c gün önce.'
+    Notes: '0: number of full days since last login'
+  BuildingOutsideClaims:
+    Text: §3Tapu §7§l» §eBaşka oyuncular da buraya yapı yapabilir. Arazinizi korumak
+      için tapulamanı öneririz!
+  TrappedWontWorkHere:
+    Text: §3Tapu §7§l» §eÜzgünüz, sizi işınlamak için guvenli bir alan bulunamıyor.
+      Yetkili ile iletişime geçin ya da beklemek istemiyorsanız §c/orman§e yazarak
+      ormana ışınlanın.
+  CommandBannedInPvP:
+    Text: §3Tapu §7§l» §cPvPdeyken bu komutu kullanamazsın.
+  UnclaimCleanupWarning:
+    Text: §3Tapu §7§l» §eTapulamadığınız bölge başka oyuncular tarafından yağmalanabilir
+      veya yöneticiler tarafından silinebilir. Eğer saklamak istediğiniz birşey inşa
+      ettiyseniz yeniden tapulayınız.
+  BuySellNotConfigured:
+    Text: §3Tapu §7§l» §cÜzgünüz, tapu bloğu alım/satım kapalıdır.
+  NoTeleportPvPCombat:
+    Text: §3Tapu §7§l» §cPvPdeyken işınlanamazsınız.
+  NoTNTDamageAboveSeaLevel:
+    Text: '§3Tapu §7§l» §cUyarı: §eTNT deniz seviyesinin uzerindeki bloklara zarar
+      vermeyecektir.'
+  NoTNTDamageClaims:
+    Text: '§3Tapu §7§l» §cUyarı: §eTNT tapulu alanlara zarar vermeyecektir.'
+  IgnoreClaimsAdvertisement:
+    Text: §eGeçersiz kılmak için, §c/ignoreclaims
+  NoPermissionForCommand:
+    Text: §3Tapu §7§l» §cBunu yapmak için yeterli yetkiniz yok.
+  ClaimsListNoPermission:
+    Text: §3Tapu §7§l» §cBaşka oyuncunun tapusu hakkında bilgi almak için yeterli
+      yetkiniz yok.
+  ExplosivesDisabled:
+    Text: §3Tapu §7§l» §aBu tapu artık patlamalardan korunuyor. devredışı bırakmak
+      için §c/claimexplosions§a yazınız.
+  ExplosivesEnabled:
+    Text: §3Tapu §7§l» §aBu tapu artık patlamalara karşı korumasız. tekrar aktif etmek
+      için §c/claimexplosions§a yazınız.
+  ClaimExplosivesAdvertisement:
+    Text: §3Tapu §7§l» §aBu claimde patlamaların bloklara zarar vermesine izin vermek
+      için, §c/claimexplosions§a yazınız.
+  PlayerInPvPSafeZone:
+    Text: §3Tapu §7§l» §eBu oyuncu PvP korumalı alanda.
+  NoPistonsOutsideClaims:
+    Text: '§3Tapu §7§l» §cUyarı: §ePistonlar blokları tapu dışına taşımayacak.'
+  SoftMuted:
+    Text: §3Tapu §7§l» §eSoft-muted §6{0}.
+    Notes: '0: The changed player''s name.'
+  UnSoftMuted:
+    Text: §3Tapu §7§l» §eUn-soft-muted §6{0}.
+    Notes: '0: The changed player''s name.'
+  DropUnlockAdvertisement:
+    Text: §3Tapu §7§l» §eÖnce §c/unlockdrops§e komutunu kullanmadığınız sürece diğer
+      oyuncular attığınız eşyaları alamayacak.
+  PickupBlockedExplanation:
+    Text: §3Tapu §7§l» §6{0}§e oyuncusu §c/unlockdrops§e komutunu kullanana kadar
+      bu eşyayı alamazsın.
+    Notes: '0: The item stack''s owner.'
+  DropUnlockConfirmation:
+    Text: §3Tapu §7§l» §aEşya atma kilidi açıldı. §eDiğer oyuncular artık itemleri
+      toplayabilir§f(§esiz tekrar ölene kadar§f)
+  AdvertiseACandACB:
+    Text: §3Tapu §7§l» §eKendine daha fazla tapu alanı vermek için §c/acb§e komutunu
+      kullanabilirsin, ya da §c/adminclaims§e ile yönetici tapusu oluşturabilirsin.
+  AdvertiseAdminClaims:
+    Text: §3Tapu §7§l» §c/adminclaims§e kullanmak yerine diğer yöneticilerle paylaşabileceğin
+      yönetici tapusunu oluşturabilirsin.
+  AdvertiseACB:
+    Text: §3Tapu §7§l» §eKendine daha fazla tapu bloğu vermek için §c/acb§e komutunu
+      kullanabilirsin.
+  NotYourPet:
+    Text: §3Tapu §7§l» §cBu sevimli hayvan §6{0}§c oyuncusuna aittir.
+    Notes: '0: owner name'
+  PetGiveawayConfirmation:
+    Text: §3Tapu §7§l» §aHayvan hediye edildi!
+  PetTransferCancellation:
+    Text: §3Tapu §7§l» §cHayvan hediyesi iptal edildi.
+  ReadyToTransferPet:
+    Text: §3Tapu §7§l» §eHediyeye hazır! Hediye etmek istediğin hayvana sağ tıkla,
+      §c/GivePet cancel§e yazarak iptal edebilirsiniz.
+  AvoidGriefClaimLand:
+    Text: §3Tapu §7§l» §eKederi önle! Eğer arazini tapularsan, yas tutmayacaksın.
+  BecomeMayor:
+    Text: §3Tapu §7§l» §eTapunu alt bölümlere ayır ve belediye başkanı ol!
+  ClaimCreationFailedOverClaimCountLimit:
+    Text: §3Tapu §7§l» §eTapulama sınırına ulaştın. Başka bir tane oluşturmak için
+      §c/tapusil §ekomutuyla başka bir tane kaldırmayı deneyin.
+  CreateClaimFailOverlapRegion:
+    Text: §3Tapu §7§l» §cTüm bunları tapulayamazsınız. Çünkü burada inşa etmenize
+      izin verilmiyor.
+  ResizeFailOverlapRegion:
+    Text: §3Tapu §7§l» §cBuraya yapı yapmak için yeterli yetkiniz yok, Bu yüzden bu
+      bölgeyi tapulayamazsın.
+  NoBuildPortalPermission:
+    Text: §3Tapu §7§l» §cBu portalı kullanamazsınız. Çünkü tapu izniniz yok.
+    Notes: '0: Destination land claim owner''s name.'
+  ShowNearbyClaims:
+    Text: §3Tapu §7§l» {0} adet claim bulundu.
+    Notes: '0: Number of claims found.'
+  NoChatUntilMove:
+    Text: §3Tapu §7§l» §eÜzgünüz, sohbet etmeden önce biraz daha hareket etmelisiniz.
+      Burada çok fazla spam botu var.
+  SiegeImmune:
+    Text: §3Tapu §7§l» §eBu oyuncu saldırıya karşı muhaftır.
+  SetClaimBlocksSuccess:
+    Text: §3Tapu §7§l» §aDeğişen tapu alanları güncellendi.
+  IgnoreConfirmation:
+    Text: §3Tapu §7§l» §aArtık bu oyuncunun sohbet mesajlarını görmezden geliyorsun.
+  NotIgnoringPlayer:
+    Text: §3Tapu §7§l» §aArtık bu oyuncuyu görmezden gelmiyorsun.
+  UnIgnoreConfirmation:
+    Text: §3Tapu §7§l» §aArtık bu oyuncunun sohbet mesajlarını görmezden gelmiyorsun.
+  SeparateConfirmation:
+    Text: §3Tapu §7§l» §eBu oyuncular sohbette artık birbirlerini görmezden geliyorlar.
+  UnSeparateConfirmation:
+    Text: §3Tapu §7§l» §eBu oyuncular sohbette artık birbirlerini görmezden gelmiyorlar.
+  NotIgnoringAnyone:
+    Text: §3Tapu §7§l» §eKimseyi görmezden gelmiyorsun.
+  TrustListHeader:
+    Text: '§3Tapu §7§l» §eGüvenilir Listesi:'
+  Manage:
+    Text: Yönetim
+  Build:
+    Text: Yapım
+  Containers:
+    Text: Sandıklar
+  Access:
+    Text: Erişim
+  StartBlockMath:
+    Text: §3Tapu §7§l» §b{0}§c aktiflikten §9+ §b{1}§b bonus §9= §eToplam alan §b{2}
+  ClaimsListHeader:
+    Text: §cTapuların:§6
+  ContinueBlockMath:
+    Text: ' §f(§cAlan: §b{0}§f)'
+  EndBlockMath:
+    Text: §3Tapu §7§l» §6Harcanabilecek blok sayısı §b{0}
+  NoClaimDuringPvP:
+    Text: §3Tapu §7§l» §cPvPdeyken arazi tapulayamazsın.
+  UntrustAllOwnerOnly:
+    Text: §3Tapu §7§l» §eSadece tapu sahibi tüm izinleri temizleyebilir.
+  LcW5MfbLwHayuHRL2jJeQN8AXGWC4Bv6Xk:
+    Text: §3Tapu §7§l» §eSadece tapu sahibi bir yöneticinin yetkisini düşürebilir.
+  BookAuthor:
+    Text: XAPRIER
+  BookTitle:
+    Text: Arazi Nasil Tapulanır
+  BookIntro:
+    Text: Eşyalarınızı ve Yapılarınızı Korumak Için Tapu Atınız.
+  BookDisabledChestClaims:
+    Text: Bu Sunucuda, Sandık Yerleştirmek Senin Için Tapu Oluşturmaz.
+  BookUsefulCommands:
+    Text: 'Kullanılabilir Komutlar:'
+  BookLink:
+    Text: ''
+    Notes: '{0}: video URL'
+  BookTools:
+    Text: §3Tapu §7§l» §eTapu Aletlerimiz §6{0}§e ve §6{1}.
+    Notes: '0: claim modification tool name; 1:claim information tool name'
+  ResizeClaimTooNarrow:
+    Text: §3Tapu §7§l» §eYeni boyut çok küçük oldu. Tapular en az §b{0}§e blok genişliğinde
+      olmalıdır.
+    Notes: '0: minimum claim width'
+  ResizeClaimInsufficientArea:
+    Text: §3Tapu §7§l» §eYeni boyut çok küçük oldu. Tapular en az §b{0}§e alanında
+      olmalı.
+    Notes: '0: minimum claim area'
+  NoProfanity:
+    Text: §3Tapu §7§l» §eLütfen dilinizi denetleyin.
+  PlayerNotIgnorable:
+    Text: §3Tapu §7§l» §cBu oyuncuyu görmezden gelemezsin.
+  NoEnoughBlocksForChestClaim:
+    Text: §3Tapu §7§l» §eTapu bloğunuz olmadığından, sizin için otomatik bir tapu
+      oluşturulmadı. Mevcut tapuları görüntülemek için §c/tapularım§e yazabilirsiniz.
+  IsIgnoringYou:
+    Text: §3Tapu §7§l» §eBu oyuncu seni görmezden geliyor.
+  MustHoldModificationToolForThat:
+    Text: §3Tapu §7§l» §cBunu yapabilmek için altın kürek tutuyor olman gerekir.
+  StandInClaimToResize:
+    Text: §3Tapu §7§l» §eYeniden boyutlandırmak istediğin tapunun içinde dur.
+  ClaimsExtendToSky:
+    Text: §3Tapu §7§l» §eArazi tapuları her zaman maksimum yapı yüksekliğine uzanır.
+  ClaimsAutoExtendDownward:
+    Text: §3Tapu §7§l» §eArazi tapuları altına blok yerleştirdikçe daha da zemine
+      uzanır.
+  MinimumRadius:
+    Text: §3Tapu §7§l» §eMinimum yarıçap §b{0}
+    Notes: '0: minimum radius'
+  RadiusRequiresGoldenShovel:
+    Text: §3Tapu §7§l» §eYarıçap belirlerken altın kürek tutmalısınız.
+  ClaimTooSmallForActiveBlocks:
+    Text: §3Tapu §7§l» §eBu tapu aktif blok türlerini§f(§6Huniler§f, §6Spawnerlar§f,§6
+      Fenerler§f...) §edestekleyecek kadar büyük değil. Ilk olarak tapuyu büyüt.
+  TooManyActiveBlocksInClaim:
+    Text: §3Tapu §7§l» §eBu tapu aktif blok türlerini§f(§6Huniler§f, §6Spawnerlar§f,§6
+      Fenerler§f...)§e limit sınırındadır. Ya daha büyük yapın ya da diğer aktif blok
+      türlerini kaldırın.
+  MaxBonusReached:
+    Text: §3Tapu §7§l» §b{0}§c adet tapu alanı alınamıyor. §eSunucu alan sınırı §b{1}
+    Notes: '0: block count; 1: bonus claims limit'
+  NoSiegeYourself:
+    Text: §3Tapu §7§l» §cKendine baskın düzenleyemezsin.
+  ConfirmAbandonAllClaims:
+    Text: §3Tapu §7§l» §eBütün tapularını kaldırmak istediğinden emin misin? Eminseniz
+      §c/tümtapusil confirm §eyazınız.
+  AutomaticClaimOtherClaimTooClose:
+    Text: §3Tapu §7§l» §cSandığınız için tapu oluşturulamıyor, başka bir tapu ile
+      çakışıyor!
+  DropUnlockOthersConfirmation:
+    Text: §3Tapu §7§l» §eUnlocked §6{0}§e's drops.
+    Notes: '0: The owner of the unlocked drops.'
+  HasSubclaimRestriction:
+    Text: §3Tapu §7§l» §eBu alt tapu ana tapudaki izinleri içermiyor.
+  ConsoleOnlyCommand:
+    Text: §3Tapu §7§l» §cBu komutu sadece konsol gerçekleştirebilir.
+  WorldNotFound:
+    Text: §3Tapu §7§l» §cDünya bulunamadı.
+  AdjustBlocksAllSuccess:
+    Text: §3Tapu §7§l» §aBütün aktif oyunculara §b{0}§a adet tapu alanı eklendi.
+    Notes: '0: adjustment amount'
+  TooMuchIpOverlap:
+    Text: §3Tapu §7§l» §eUzgünüz, senin IP ile giriş yapan bir sürü oyuncu var.
+  StandInSubclaim:
+    Text: §3Tapu §7§l» §eKısıtlama için bir alt tapuda bulunman gerekir.
+  SubclaimRestricted:
+    Text: §3Tapu §7§l» §eBu alt tapu artık izinleri ana tapudan almayacak.
+  SubclaimUnrestricted:
+    Text: §3Tapu §7§l» §eBu alt tapu artık izinleri ana tapudan alacak.
+  NetherPortalTrapDetectionMessage:
+    Text: §3Tapu §7§l» §eGöründüğü üzere bir nether portalında sıkışmışsın. Doğruysa
+      sizi birkaç saniye içerisinde kurtaracağız!
+    Notes: Sent to player on join, if they left while inside a nether portal.
+  YouHaveNoClaims:
+    Text: §3Tapu §7§l» §eHiçbir tapunuz yok.
+  ManagersDontUntrustManagers:
+    Text: §3Tapu §7§l» §cSadece tapu sahibi yöneticinin yetkisini değiştirebilir.
