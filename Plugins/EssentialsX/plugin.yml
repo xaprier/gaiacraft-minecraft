@@ -1,0 +1,707 @@
+# This determines the command prefix when there are conflicts (/name:home, /name:help, etc.)
+name: Essentials
+main: com.earth2me.essentials.Essentials
+# Note to developers: This next line cannot change, or the automatic versioning system will break.
+version: 2.19.4
+website: https://essentialsx.net/
+description: Provides an essential, core set of commands for Bukkit.
+softdepend: [Vault, LuckPerms]
+authors: [Zenexer, ementalo, Aelux, Brettflan, KimKandor, snowleo, ceulemans, Xeology, KHobbits, md_5, Iaccidentally, drtshock, vemacs, SupaHam, mdcfe, JRoy, pop4959]
+api-version: "1.13"
+commands:
+  afk:
+    description: Marks you as away-from-keyboard.
+    usage: /<command> [player/message...]
+    aliases: [away]
+  antioch:
+    description: 'A little surprise for operators.'
+    usage: /<command> [message]
+    aliases: [grenade,tnt]
+  anvil:
+    description: Opens up an Anvil.
+    usage: /<command>
+    aliases: [örs,ors]
+  back:
+    description: Teleports you to your location prior to tp/spawn/warp.
+    usage: /<command> [player]
+    aliases: [geri,return,dön]
+  backup:
+    description: Runs the backup if configured.
+    usage: /<command>
+    aliases: []
+  balance:
+    description: States the current balance of a player.
+    usage: /<command> [player]
+    aliases: [bal,para,money]
+  balancetop:
+    description: Gets the top balance values.
+    usage: /<command> [page]
+    aliases: [baltop]
+  ban:
+    description: Bans a player.
+    usage: /<command> <player> [reason]
+    aliases: [yasakla]
+  banip:
+    description: Bans an IP address.
+    usage: /<command> <address> [reason]
+    aliases: [ipyasakla]
+  beezooka:
+    description: Throw an exploding bee at your opponent.
+    usage: /<command>
+    aliases: [bazuka]
+  book:
+    description: Allows reopening and editing of sealed books.
+    usage: /<command> [title|author [name]]
+    aliases: [kitap]
+  break:
+    description: Breaks the block you are looking at.
+    usage: /<command>
+    aliases: [kır,kir]
+  broadcast:
+    description: Broadcasts a message to the entire server.
+    usage: /<command> <msg>
+    aliases: [bc,ebc,bcast,ebcast,ebroadcast,shout,eshout]
+  broadcastworld:
+    description: Broadcasts a message to a world.
+    usage: /<command> <world> <msg>
+    aliases: [bc,shout,duyuru]
+  bigtree:
+    description: Spawn a big tree where you are looking.
+    usage: /<command> <tree|redwood|jungle|darkoak>
+    aliases: [largetree]
+  burn:
+    description: Set a player on fire.
+    usage: /<command> <player> <seconds>
+    aliases: [yak]
+  cartographytable:
+    description: Opens up a cartography table.
+    usage: /<command>
+    aliases: [haritaci,haritacı]
+  clearinventory:
+    description: Clear all items in your inventory.
+    usage: /<command> [player|*] [item[:<data>]|*|**] [amount]
+    aliases: [clean,clear,envantertemizle]
+  clearinventoryconfirmtoggle:
+    description: Toggles whether you are prompted to confirm inventory clears.
+    usage: /<command>
+    aliases: [clearconfirmtoggle,cleanconfirmtoggle,cct,clearct,cleanct]
+  condense:
+    description: Condenses items into a more compact blocks.
+    usage: /<command> [itemname]
+    aliases: [compact,blocks,toblocks,sıkıştır]
+  compass:
+    description: Describes your current bearing.
+    usage: /<command>
+    aliases: [yon,direction,yön,pusula]
+  createkit:
+    description: Create a kit in game!
+    usage: /<command> <kitname> <delay>
+    aliases: [kitcreate,kitolustur,kitoluştur]
+  customtext:
+    description: Allows you to create custom text commands.
+    usage: /<alias> - Define in bukkit.yml
+  delhome:
+    description: Removes a home.
+    usage: /<command> [player:]<name>
+    aliases: [remhome,evsil]
+  deljail:
+    description: Removes a jail.
+    usage: /<command> <jailname>
+    aliases: [remjail,deljail,jailsil]
+  delkit:
+    description: Deletes the specified kit.
+    usage: /<command> <kit>
+    aliases: [remkit,deletekit,removekit,kitsil]
+  delwarp:
+    description: Deletes the specified warp.
+    usage: /<command> <warp>
+    aliases: [remwarp,rmwarp,warpsil]
+  depth:
+    description: States current depth, relative to sea level.
+    usage: /<command>
+    aliases: [derinlik,yükseklik,rakım]
+  disposal:
+    description: Opens a portable disposal menu.
+    usage: /<command>
+    aliases: [tasfiye,trash,çöp,cop]
+  eco:
+    description: Manages the server economy.
+    usage: /<command> <give|take|set|reset> <player> <amount>
+    aliases: [economy,ekonomi,eko,para]
+  enchant:
+    description: Enchants the item the user is holding.
+    usage: /<command> <enchantmentname> [level]
+    aliases: [ench,enchantmen,buyule,büyüle,büyü]
+  enderchest:
+    description: Lets you see inside an enderchest.
+    usage: /<command> [player]
+    aliases: [echest,enderc,endersandık]
+  essentials:
+    description: Reloads essentials.
+    usage: /<command>
+    aliases: [eessentials, ess, eess, essversion]
+  exp:
+    description: Give, set, reset, or look at a players experience.
+    usage: /<command> [reset|show|set|give] [playername [amount]]
+    aliases: [level,xp,tecrübe]
+  ext:
+    description: Extinguish players.
+    usage: /<command> [player]
+    aliases: [extinguish,sondur,söndür]
+  feed:
+    description: Satisfy the hunger.
+    usage: /<command> [player]
+    aliases: [eat,doyur,besle]
+  fly:
+    description: Take off, and soar!
+    usage: /<command> [player] [on|off]
+    aliases: [uç]
+  fireball:
+    description: Throw a fireball or other assorted projectiles.
+    usage: /<command> [fireball|small|large|arrow|skull|egg|snowball|expbottle|dragon|splashpotion|lingeringpotion|trident] [speed]
+    aliases: [atestopu,ateştopu]
+  firework:
+    description: Allows you to modify a stack of fireworks.
+    usage: /<command> <<meta param>|power [amount]|clear|fire [amount]>
+    aliases: [havaifişek,havaifisek]
+  gamemode:
+    description: Change player gamemode.
+    usage: /<command> <survival|creative|adventure|spectator> [player]
+    aliases: [gm,gma,gmc,gms,gmt]
+  gc:
+    description: Reports memory, uptime and tick info.
+    usage: /<command>
+    aliases: [garbagecollector,lag,mem,memory,uptime,tps,entities]
+  getpos:
+    description: Get your current coordinates or those of a player.
+    usage: /<command> [player]
+    aliases: [coords,position,whereami,getlocation,getloc,nerdeyim,koordinat,pozisyon]
+  give:
+    description: Give a player an item.
+    usage: /<command> <player> <item|numeric> [amount [itemmeta...]]
+    aliases: [ver]
+  god:
+    description: Enables your godly powers.
+    usage: /<command> [player] [on|off]
+    aliases: [godmode,ölümsüzlük,olumsuzluk]
+  grindstone:
+    description: Opens up a grindstone.
+    usage: /<command>
+    aliases: [tasbileyici,bileyici,taşbileyici]
+  hat:
+    description: Get some cool new headgear.
+    usage: /<command> [remove]
+    aliases: [head,kafa,şapka]
+  heal:
+    description: Heals you or the given player.
+    usage: /<command> [player]
+    aliases: [iyileştir,canlandır,canlandir,iyilestir]
+  help:
+    description: Views a list of available commands.
+    usage: /<command> [search term] [page]
+    aliases: [yardım,yardim]
+  helpop:
+    description: Message online admins.
+    usage: /<command> <message>
+    aliases: [yardımop,yardimop]
+  home:
+    description: Teleport to your home.
+    usage: /<command> [player:][name]
+    aliases: [ev]
+  ice:
+    description: Cools a player off.
+    usage: /<command> [player]
+    aliases: [buzlastir,dondur]
+  ignore:
+    description: Ignore or unignore other players.
+    usage: /<command> <player>
+    aliases: [engelle,engelleme]
+  info:
+    description: Shows information set by the server owner.
+    usage: /<command> [chapter] [page]
+    aliases: []
+  invsee:
+    description: See the inventory of other players.
+    usage: /<command> <player>
+    aliases: [envanter]
+  item:
+    description: Spawn an item.
+    usage: /<command> <item|numeric> [amount [itemmeta...]]
+    aliases: [eşya,esya]
+  itemdb:
+    description: Searches for an item.
+    usage: /<command> <item>
+    aliases: [durability,dayanıklılık]
+  itemlore:
+    description: Edit the lore of an item.
+    usage: /<command> <add/set/clear> [text/line] [text]
+    aliases: [lore,açıklama,açıkla]
+  itemname:
+    description: Names an item.
+    usage: /<command> [name]
+    aliases: [iname,itemrename,irename]
+  jails:
+    description: List all jails.
+    usage: /<command>
+    aliases: [hapisler,hapishaneler]
+  jump:
+    description: Jumps to the nearest block in the line of sight.
+    usage: /<command>
+    aliases: [jumpto,zipla,zıpla]
+  kick:
+    description: Kicks a specified player with a reason.
+    usage: /<command> <player> [reason]
+    aliases: [at,kov]
+  kickall:
+    description: Kicks all players off the server except the issuer.
+    usage: /<command> [reason]
+    aliases: [herkesiat]
+  kill:
+    description: Kills specified player.
+    usage: /<command> <player>
+    aliases: [öldür,gebert]
+  kit:
+    description: Obtains the specified kit or views all available kits.
+    usage: /<command> [kit] [player]
+    aliases: [kits]
+  kitreset:
+    description: Resets the cooldown on the specified kit.
+    usage: /<command> <kit> [player]
+    aliases: []
+  kittycannon:
+    description: Throw an exploding kitten at your opponent.
+    usage: /<command>
+    aliases: []
+  lightning:
+    description: The power of Thor. Strike at cursor or player.
+    usage: /<command> [player] [power]
+    aliases: [thor,smite,yildirim,yıldırım]
+  list:
+    description: List all online players.
+    usage: /<command> [group]
+    aliases: [playerlist,onlinelist,aktif,online]
+  loom:
+    description: Opens up a loom.
+    usage: /<command>
+    aliases: [dokuma,dokumatezgahı]
+  mail:
+    description: Manages inter-player, intra-server mail.
+    usage: /<command> [read|clear|clear [number]|send [to] [message]|sendtemp [to] [expire time] [message]|sendall [message]]
+    aliases: [email]
+  me:
+    description: Describes an action in the context of the player.
+    usage: /<command> <description>
+    aliases: []
+  more:
+    description: Fills the item stack in hand to specified amount, or to maximum size if none is specified.
+    usage: /<command> [amount]
+    aliases: [maxstack]
+  motd:
+    description: Views the Message Of The Day.
+    usage: /<command> [chapter] [page]
+    aliases: [gununmesaji,gününmesajı]
+  msg:
+    description: Sends a private message to the specified player.
+    usage: /<command> <to> <message>
+    aliases: []
+  msgtoggle:
+    description: Blocks receiving all private messages.
+    usage: /<command> [player] [on|off]
+    aliases: []
+  mute:
+    description: Mutes or unmutes a player.
+    usage: /<command> <player> [datediff] [reason]
+    aliases: [sustur]
+  near:
+    description: Lists the players near by or around a player.
+    usage: /<command> [playername] [radius]
+    aliases: [enyakinda,yakında,yakinda]
+  nick:
+    description: Change your nickname or that of another player.
+    usage: /<command> [player] <nickname|off>
+    aliases: []
+  nuke:
+    description: May death rain upon them.
+    usage: /<command> [player]
+    aliases: []
+  tpoffline:
+    description: Teleport to a player's last known logout location
+    usage: /<command> <player>
+    aliases: [offlinetp,tplogout,tpsonkonum]
+  pay:
+    description: Pays another player from your balance.
+    usage: /<command> <player> <amount>
+    aliases: [öde,yatır]
+  paytoggle:
+    description: Toggles whether you are accepting payments.
+    usage: /<command> [player]
+    aliases: [ödeaç,ödekapat,payoff,payon]
+  payconfirmtoggle:
+    description: Toggles whether you are prompted to confirm payments.
+    usage: /<command>
+    aliases: [payconfirmoff,payconfirmon,payconfirm]
+  ping:
+    description: Pong!
+    usage: /<command>
+    aliases: [echo,pong]
+  playtime:
+    description: Shows a player's time played in game
+    usage: /<command> [player]
+    aliases: [oynamasuresi,oynamasüresi]
+  potion:
+    description: Adds custom potion effects to a potion.
+    usage: /<command> <clear|apply|effect:<effect> power:<power> duration:<duration>>
+    aliases: [elixer,iksir]
+  powertool:
+    description: Assigns a command to the item in hand.
+    usage: /<command> [l:|a:|r:|c:|d:][command] [arguments] - {player} can be replaced by name of a clicked player.
+    aliases: [pt]
+  powertooltoggle:
+    description: Enables or disables all current powertools.
+    usage: /<command>
+    aliases: [ptt,pttoggle]
+  ptime:
+    description: Adjust player's client time. Add @ prefix to fix.
+    usage: /<command> [list|reset|day|night|dawn|17:30|4pm|4000ticks] [player|*]
+    aliases: [playertime,ozaman]
+  pweather:
+    description: Adjust a player's weather
+    usage: /<command> [list|reset|storm|sun|clear] [player|*]
+    aliases: [playerweather,ohava]
+  r:
+    description: Quickly reply to the last player to message you.
+    usage: /<command> <message>
+    aliases: [reply,c,cevap]
+  rtoggle:
+    description: Change whether the recipient of the reply is last recipient or last sender
+    usage: /<command> [player] [on|off]
+    aliases: [cevapdeğiş]
+  realname:
+    description: Displays the username of a user based on nick.
+    usage: /<command> <nickname>
+    aliases: [rn]
+  recipe:
+    description: Displays how to craft items.
+    usage: /<command> <item> [number]
+    aliases: [formula,method,tarif,formül,formul]
+  remove:
+    description: Removes entities in your world.
+    usage: /<command> <all|tamed|named|drops|arrows|boats|minecarts|xp|paintings|itemframes|endercrystals|monsters|animals|ambient|mobs|[mobType]> [radius|world]
+    aliases: [butcher,killall,mobkill]
+  repair:
+    description: Repairs the durability of one or all items.
+    usage: /<command> [hand|all]
+    aliases: [fix,tamir]
+  rest:
+    description: Rests you or the given player.
+    usage: /<command> [player]
+    aliases: [dinlendir,dinlen]
+  rules:
+    description: Views the server rules.
+    usage: /<command> [chapter] [page]
+    aliases: [kurallar]
+  seen:
+    description: Shows the last logout time of a player.
+    usage: /<command> <playername>
+    aliases: [songorulme,songörülme]
+  sell:
+    description: Sells the item currently in your hand.
+    usage: /<command> <<itemname>|<id>|hand|inventory|blocks> [amount]
+    aliases: [sat]
+  sethome:
+    description: Set your home to your current location.
+    usage: /<command> [[player:]name]
+    aliases: [createhome,evayarla,setev]
+  setjail:
+    description: Creates a jail where you specified named [jailname].
+    usage: /<command> <jailname>
+    aliases: [createjail,sethapis,hapisayarla]
+  settpr:
+    description: Set the random teleport location and parameters.
+    usage: /<command> [center|minrange|maxrange] [value]
+    aliases: [settprandom]
+  setwarp:
+    description: Creates a new warp.
+    usage: /<command> <warp>
+    aliases: [createwarp,warpolustur,warpoluştur,yeniwarp]
+  setworth:
+    description: Set the sell value of an item.
+    usage: /<command> [itemname|id] <price>
+    aliases: [satisayarla]
+  showkit:
+    description: Show contents of a kit.
+    usage: /<command> <kitname>
+    aliases: [kitbilgi]
+  editsign:
+    description: Edits a sign in the world.
+    usage: /<command> <set/clear/copy/paste> [line number] [text]
+    aliases: [sign,tabela]
+  skull:
+    description: Set the owner of a player skull
+    usage: /<command> [owner]
+    aliases: [playerskull,head]
+  smithingtable:
+    description: Opens up a smithing table.
+    usage: /<command>
+    aliases: [demircimasasi, demirci, demircimasası]
+  socialspy:
+    description: Toggles if you can see msg/mail commands in chat.
+    usage: /<command> [player] [on|off]
+    aliases: [ss]
+  spawner:
+    description: Change the mob type of a spawner.
+    usage: /<command> <mob> [delay]
+    aliases: [spawnerdegis,convertsp,spawnerdeğiş]
+  spawnmob:
+    description: Spawns a mob.
+    usage: /<command> <mob>[:data][,<mount>[:data]] [amount] [player]
+    aliases: [mob,spawnentity]
+  speed:
+    description: Change your speed limits.
+    usage: /<command> [type] <speed> [player]
+    aliases: [flyspeed, hiz, hız]
+  stonecutter:
+    description: Opens up a stonecutter.
+    usage: /<command>
+    aliases: [taskesici,taşkesici]
+  sudo:
+    description: Make another user perform a command.
+    usage: /<command> <player> <command [args]>
+    aliases: []
+  suicide:
+    description: Causes you to perish.
+    usage: /<command>
+    aliases: [intihar]
+  tempban:
+    description: Temporary ban a user.
+    usage: /<command> <playername> <datediff> [reason]
+    aliases: [geciciban,geçiciban,geçiciyasakla,geciciyasakla]
+  tempbanip:
+    description: Temporarily ban an IP Address.
+    usage: /<command> <playername> <datediff> [reason]
+    aliases: [geciciipban,geçiciipban,geçiciipyasakla,geciciipyasakla,geçicibanip]
+  thunder:
+    description: Enable/disable thunder.
+    usage: /<command> <true/false> [duration]
+    aliases: [simsekac, simsekapat, şimşekaç, şimşekapat, şimşek]
+  time:
+    description: Display/Change the world time. Defaults to current world.
+    usage: /<command> [set|add] [day|night|dawn|17:30|4pm|4000ticks] [worldname|all]
+    aliases: [day,night,zaman,gun,gece]
+  togglejail:
+    description: Jails/Unjails a player, TPs them to the jail specified.
+    usage: /<command> <player> <jailname> [datediff]
+    aliases: [jail,hapset]
+  top:
+    description: Teleport to the highest block at your current position.
+    usage: /<command>
+    aliases: []
+  tp:
+    description: Teleport to a player.
+    usage: /<command> <player> [otherplayer]
+    aliases: [tele,teleport]
+  tpa:
+    description: Request to teleport to the specified player.
+    usage: /<command> <player>
+    aliases: [call,tpask]
+  tpaall:
+    description: Requests all players online to teleport to you.
+    usage: /<command> <player>
+    aliases: []
+  tpaccept:
+    description: Accepts teleport requests.
+    usage: /<command> [player|*]
+    aliases: [tpyes,tpkabul]
+  tpahere:
+    description: Request that the specified player teleport to you.
+    usage: /<command> <player>
+    aliases: [tpaburaya]
+  tpall:
+    description: Teleport all online players to another player.
+    usage: /<command> [player]
+    aliases: []
+  tpauto:
+    description: Automatically accept teleportation requests.
+    usage: /<command> [player]
+    aliases: [ototpkabul,tpotokabul]
+  tpacancel:
+    description: Cancel all outstanding teleport requests. Specify [player] to cancel requests with them.
+    usage: /<command> [player]
+    aliases: [tpiptal,tpaiptal]
+  tpdeny:
+    description: Rejects teleport requests.
+    usage: /<command> [player|*]
+    aliases: [tpno,tpreddet]
+  tphere:
+    description: Teleport a player to you.
+    usage: /<command> <player>
+    aliases: [tpburaya,burayaçek]
+  tpo:
+    description: Teleport override for tptoggle.
+    usage: /<command> <player> [otherplayer]
+    aliases: []
+  tpohere:
+    description: Teleport here override for tptoggle.
+    usage: /<command> <player>
+    aliases: []
+  tppos:
+    description: Teleport to coordinates.
+    usage: /<command> <x> <y> <z> [yaw] [pitch] [world]
+    aliases: [tpkonum]
+  tpr:
+    description: Teleport randomly.
+    usage: /<command>
+    aliases: [tprandom]
+  tptoggle:
+    description: Blocks all forms of teleportation.
+    usage: /<command> [player] [on|off]
+    aliases: [tptoggle,tpkapat,tpakapat]
+  tree:
+    description: Spawn a tree where you are looking.
+    usage: /<command> <tree|birch|redwood|redmushroom|brownmushroom|jungle|junglebush|swamp>
+    aliases: [ağaç,agac]
+  unban:
+    description: Unbans the specified player.
+    usage: /<command> <player>
+    aliases: [pardon]
+  unbanip:
+    description: Unbans the specified IP address.
+    usage: /<command> <address>
+    aliases: [pardonip]
+  unlimited:
+    description: Allows the unlimited placing of items.
+    usage: /<command> <list|item|clear> [player]
+    aliases: []
+  vanish:
+    description: Hide yourself from other players.
+    usage: /<command> [player] [on|off]
+    aliases: [v,gizlen,kaybol]
+  warp:
+    description: List all warps or warp to the specified location.
+    usage: /<command> <pagenumber|warp> [player]
+    aliases: [warplar,warps,warp]
+  warpinfo:
+    description: Finds location information for a specified warp.
+    usage: /<command> <warp>
+    aliases: [warpbilgi]
+  weather:
+    description: Sets the weather.
+    usage: /<command> <storm/sun> [duration]
+    aliases: [rain,sky,storm,sun,hava]
+  whois:
+    description: Determine the username behind a nickname.
+    usage: /<command> <nickname>
+    aliases: [kimbu,kim,bukim]
+  workbench:
+    description: Opens up a workbench.
+    usage: /<command>
+    aliases: [calismamasasi,craft,çalışmamasası]
+  world:
+    description: Switch between worlds.
+    usage: /<command> [world]
+    aliases: [dunya,dünya]
+  worth:
+    description: Calculates the worth of items in hand or as specified.
+    usage: /<command> <<itemname>|<id>|hand|inventory|blocks> [-][amount]
+    aliases: [price,kar,zarar,fiyat]
+
+permissions:
+  essentials.*:
+    default: op
+    description: Give players with op everything by default
+    children:
+      essentials.gamemode.*: true
+  # These permissions can't be assigned from player-commands for compatibility reasons
+  essentials.teleport.cooldown.bypass.tpa:
+    default: true
+    description: If the player does not have this permission, /tpa will have cooldown even with the parent bypass perm
+  essentials.teleport.cooldown.bypass.back:
+    default: true
+    description: If the player does not have this permission, /back will have cooldown even with the parent bypass perm
+  essentials.gamemode.*:
+    default: op
+    children:
+      essentials.gamemode: true
+      essentials.gamemode.others: true
+      essentials.gamemode.all: true
+  essentials.seen.extra:
+    default: op
+    children:
+      essentials.seen.ip: true
+      essentials.seen.location: true
+      essentials.seen.uuid: true
+  essentials.keepinv:
+    default: false
+    description: Controls whether players keep their inventory on death.
+  essentials.near.exclude:
+    default: false
+    description: If the player should be excluded from near lookups.
+  essentials.keepxp:
+    default: false
+    description: Allows the user to keep their exp on death, instead of dropping it.
+  essentials.invsee.preventmodify:
+    default: false
+    description: Prevents other players from modifying the players inventory.
+  essentials.afk.auto:
+    default: false
+    description: Players with this permission will be set to afk after a period of inaction as defined in the config file.
+  essentials.home.compass:
+    default: false
+    description: Point the player's compass at their first home. compass-towards-home-perm needs to be enabled in the configuration.
+  essentials.ban.exempt:
+    default: false
+    description: Prevent a specified group or player from being banned
+  essentials.kick.exempt:
+    default: false
+    description: Prevents the player from being kicked.
+  essentials.chat.ignoreexempt:
+    default: false
+    description: Someone with this permission will not be ignored, even if they are on another persons ignore list
+  essentials.kit.exemptdelay:
+    default: false
+    description: Exempts you from the kit delay feature, this affects signs as well as command.
+  essentials.mute.exempt:
+    default: false
+    description: Prevent a specified group or player from being muted
+  essentials.sethome.bed:
+    default: false
+    description: Allows the player to right click a bed during daytime to update their 'bed' home.
+  essentials.silentjoin:
+    default: false
+    description: Allow to join silently
+  essentials.silentjoin.vanish:
+    default: false
+    description: Allow to join silently, and get put in vanish mode
+  essentials.silentquit:
+    default: false
+    description: Suppress leave/quit messages for users with this permission.
+  essentials.sudo.exempt:
+    default: false
+    description: Prevents the holder from being sudo'ed by another user
+  essentials.tempban.exempt:
+    default: false
+    description: Prevents a specified group or player from being tempbanned
+  essentials.nick.allowunsafe:
+    default: false
+    description: If a player has this, they can set their username to any value. Use with caution, as this has the potential to break userdata files.
+  essentials.balancetop.exclude:
+    default: false
+    description: Players with this permission are excluded from the balancetop
+  essentials.back.onteleport:
+    default: true
+    description: Players with this permission will have back location stored during any teleportation
+  essentials.back.ondeath:
+    default: false
+    description: Players with this permission will have back location stored during death
+  essentials.exempt:
+    default: false
+    description: Parent permission to be exempt from many moderator actions
+    children:
+      essentials.invsee.preventmodify: true
+      essentials.ban.exempt: true
+      essentials.kick.exempt: true
+      essentials.mute.exempt: true
+      essentials.chat.ignoreexempt: true
+      essentials.sudo.exempt: true
+      essentials.tempban.exempt: true
+      essentials.exempt.protect: true
