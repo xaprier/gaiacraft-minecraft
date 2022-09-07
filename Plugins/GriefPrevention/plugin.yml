@@ -1,0 +1,375 @@
+name: GriefPrevention
+main: me.ryanhamshire.GriefPrevention.GriefPrevention
+softdepend: [Vault, Multiverse-Core, My_Worlds, MystCraft, Transporter, TheUnderground, WorldGuard, WorldEdit, RoyalCommands, MultiWorld, Denizen, Hyperconomy]
+dev-url: https://dev.bukkit.org/projects/grief-prevention
+loadbefore: [TheUnderground]
+version: '16.13.0'
+api-version: '1.15'
+commands:
+    abandonclaim:
+      description: '§eÜstünde durduğunuz tapunuzu siler.'
+      usage: '§6Kullanım §7§l»§c /tapusil'
+      aliases: [claimsil,silclaim,siltapu,tapusil]
+      permission: griefprevention.claims
+    abandontoplevelclaim:
+      description: '§eBulunduğunuz tapunuzu ve alt bölümlerini siler.'
+      usage: '§6Kullanım §7§l»§c /AbandonTopLevelClaim'
+      permission: griefprevention.claims
+    abandonallclaims:
+      description: '§eBütün tapularınızı siler.'
+      usage: '§6Kullanım §7§l»§c /AbandonAllClaims'
+      aliases: [tumclaimsil, tumclaimkaldir, tümclaimsil, tümclaimkaldır, tümtapusil, tümtapukaldır, tumtapusil, tumtapukaldir]
+      permission: griefprevention.claims
+    trust:
+      description: '§eBelirtilen oyuncuya yapım, erişim ve sandıklara izin verir.'
+      usage: '§6Kullanım §7§l»§c /güven <oyuncu>§e Oyuncuya inşa etme izni verir. Ayrıca şu komutlara bakınız /güvenme, /sandıkgüven, /erişimgüven ve /güvenizniver.'
+      aliases: [tr, güven, guven]
+      permission: griefprevention.claims
+    untrust:
+      description: '§eBelirtilen oyuncudan bütün izinleri kaldırır.'
+      usage: '§6Kullanım §7§l»§c /güvenme <oyuncu>'
+      aliases: [ut, guvenme, güvenme]
+      permission: griefprevention.claims
+    containertrust:
+      description: '§eBelirtilen oyuncuya erişim ve sandıklara izin verir.'
+      usage: '§6Kullanım §7§l»§c /sandıkgüven <oyuncu>§e Belirtilen oyuncuya sanddıklarınız, tarım ürünleriniz, hayvanlarınız, yataklarınız ve buton/şalter hakkında güvenirsiniz.'
+      aliases: [sandıkgüven]
+      permission: griefprevention.claims
+    accesstrust:
+      description: '§eBelirtilen oyuncuya erişim izni verir.'
+      usage: '§6Kullanım §7§l»§c /erişimgüven <oyuncu>§e Belirtilen oyuncuya yataklarınız, buton ve şalterler hakkında güvenirsiniz.'
+      aliases: [at,erişimgüven]
+      permission: griefprevention.claims
+    permissiontrust:
+      description: '§eBelirtilen oyuncuya tapuda yapım, erişim ve sandıklara izin verme izni verir.'
+      usage: '§6Kullanım §7§l»§c /güvenizniver <oyuncu>§e Belirtilen oyuncuya kendi izin hakkını paylaşabilme hakkında güvenirsiniz.'
+      aliases: [pt,guvenizniver,güvenizniver,güvenver,guvenver]
+      permission: griefprevention.claims
+    subdivideclaims:
+      description: '§eTapu küreğini alt bölüm tapulama küreğine çevirir.'
+      usage: '§6Kullanım §7§l»§c /alttapu'
+      aliases: [sc, subdivideclaim, alttapu, boltapu]
+      permission: griefprevention.claims
+    restrictsubclaim:
+      description: '§eAlt tapunun izinlerini kısıtlayarak ana tapudan almasını engeller.'
+      usage: '§6Kullanım §7§l»§c /restrictsubclaim'
+      aliases: rsc
+      permission: griefprevention.claims
+    adjustbonusclaimblocks:
+      description: '§eBelirtilen oyuncuya belirtilen miktarda tapu bloğu verir.'
+      usage: '§6Kullanım §7§l»§c /tapubloğuver <oyuncu> <miktar>'
+      permission: griefprevention.adjustclaimblocks
+      aliases: [acb,tapubloğuver]
+    adjustbonusclaimblocksall:
+      description: '§eBütün aktif oyunculara belirtilen miktarda tapu bloğu verir.'
+      usage: '§6Kullanım §7§l»§c /herkesetapubloğuver <oyuncu> <miktar>'
+      permission: griefprevention.adjustclaimblocks
+      aliases: [acball,herkesetapubloğuver]
+    setaccruedclaimblocks:
+      description: '§eBelirtilen oyuncunun tapu bloğunu belirtilen miktara ayarlar.'
+      usage: '§6Kullanım §7§l»§c /SetAccruedClaimBlocks <oyuncu> <miktar>'
+      permission: griefprevention.adjustclaimblocks
+      aliases: scb
+    deleteclaim:
+      description: '§eBulunduğunuz konumdaki tapu sizin olmasa bile siler.'
+      usage: '§6Kullanım §7§l»§c /DeleteClaim'
+      permission: griefprevention.deleteclaims
+    deleteallclaims:
+      description: '§eBelirtilen oyuncunun bütün tapularını siler.'
+      usage: '§6Kullanım §7§l»§c /DeleteAllClaims <oyuncu>'
+      permission: griefprevention.deleteclaims
+    deleteclaimsinworld:
+      description: '§eBelirtilen dünyadan bütün tapuları siler. Sadece konsol gerçekleştirebilir.'
+      usage: '§6Kullanım §7§l»§c /DeleteClaimsInWorld <dünya>'
+      aliases: [deleteallclaimsinworld, clearclaimsinworld, clearallclaimsinworld]
+      permission: griefprevention.deleteclaimsinworld
+    deleteuserclaimsinworld:
+      description: '§eBelirtilen dünyadan yönetici tapusu olmayan bütün tapuları siler. Sadece konsol gerçekleştirebilir.'
+      usage: '§6Kullanım §7§l»§c /DeleteUserClaimsInWorld <dünya>'
+      aliases: [deletealluserclaimsinworld, clearuserclaimsinworld, clearalluserclaimsinworld]
+      permission: griefprevention.deleteclaimsinworld
+    adminclaims:
+      description: '§eTapu küreğini yönetici tapulama moduna ayarlar.'
+      usage: '§6Kullanım §7§l»§c /AdminClaims'
+      permission: griefprevention.adminclaims
+      aliases: ac
+    restorenature:
+      description: '§eTapu küreğini restore moduna ayarlar.'
+      usage: '§6Kullanım §7§l»§c /RestoreNature'
+      permission: griefprevention.restorenature
+      aliases: rn
+    restorenatureaggressive:
+      description: '§eTapu küreğini agresif restore moduna ayarlar.'
+      usage: '§6Kullanım §7§l»§c /RestoreNatureAggressive'
+      permission: griefprevention.restorenatureaggressive
+      aliases: rna
+    restorenaturefill:
+      description: '§eTapu küreğini belirlenen çapta restore doldurma moduna ayarlar.'
+      usage: '§6Kullanım §7§l»§c /RestoreNatureFill <çap>'
+      permission: griefprevention.restorenatureaggressive
+      aliases: rnf
+    basicclaims:
+      description: '§eTapu küreğini normal tapulama moduna ayarlar.'
+      usage: '§6Kullanım §7§l»§c /BasicClaims'
+      aliases: bc
+      permission: griefprevention.claims
+    extendclaim:
+      description: '§eBaktığınız yöne doğru belirlenen sayıda tapuyu genişletir.'
+      usage: '§6Kullanım §7§l»§c /ExtendClaim <blokadedi>'
+      aliases: [expandclaim, resizeclaim]
+      permission: griefprevention.claims
+    claim:
+      description: '§eSizi merkez alarak bulunduğunuz konumda tapu oluşturur.'
+      usage: '§6Kullanım §7§l»§c /tapula [opsiyonel çap]'
+      aliases: [tapu,tapula]
+      permission: griefprevention.claims
+    buyclaimblocks:
+      description: '§eBelirtilen blok sayısı kadar tapu bloğu satın alır.'
+      usage: '§6Kullanım §7§l»§c /tapual <blokadedi>'
+      aliases: [buyclaim, tapual, claimal, tapubloğual]
+      permission: griefprevention.buysellclaimblocks
+    sellclaimblocks:
+      description: '§eBelirtilen blok sayısı kadar tapu bloğu satar.'
+      usage: '§6Kullanım §7§l»§c /tapusat <blokadedi>'
+      aliases: [sellclaim, tapusat, claimsat, tapubloğusat]
+      permission: griefprevention.buysellclaimblocks
+    trapped:
+      description: '§eKomut gerçekleştiğinde sizi yakınlarda tapu olmayan bölüme ışınlar.'
+      usage: '§6Kullanım §7§l»§c /Trapped'
+      permission: griefprevention.trapped
+    trustlist:
+      description: '§eBulunduğunuz tapudaki güvendiklerinizi listeler.'
+      usage: '§6Kullanım §7§l»§c /güvendiklerim'
+      aliases: [güvendiklerim, guvendiklerim]
+      permission: griefprevention.claims
+    siege:
+      description: '§eBelirtilen oyuncuya baskın atar.'
+      usage: '§6Kullanım §7§l»§c /Siege <oyuncu>'
+      permission: griefprevention.siege
+    ignoreclaims:
+      description: '§eTapu izinlerini aşar.'
+      usage: '§6Kullanım §7§l»§c /IgnoreClaims'
+      permission: griefprevention.ignoreclaims
+      aliases: ic
+    deletealladminclaims:
+      description: '§eBütün yönetici tapularını siler.'
+      usage: '§6Kullanım §7§l»§c /DeleteAllAdminClaims'
+      permission: griefprevention.adminclaims
+    adminclaimslist:
+      description: '§eBütün yönetici tapularını listeler.'
+      usage: '§6Kullanım §7§l»§c /AdminClaimsList'
+      permission: griefprevention.adminclaims
+    transferclaim:
+      description: '§eYönetici tapusunu normal tapuya çevirerek oyuncuya verir.'
+      usage: '§6Kullanım §7§l»§c /TransferClaim <oyuncu>'
+      aliases: giveclaim
+      permission: griefprevention.transferclaim
+    unlockdrops:
+      description: '§eÖldüğünüzde oyuncuların sizin eşyalarınızı almanıza izin verir.'
+      usage: '§6Kullanım §7§l»§c /UnlockDrops'
+      permission: griefprevention.unlockdrops
+    claimslist:
+      description: '§eBelirtilen oyuncunun veya sizin tapularını listeler.'
+      usage: '§6Kullanım §7§l»§c /tapularım veya /tapularım <oyuncu>'
+      aliases: [claimlist, listclaims, claimlerim, tapularım, tapuları]
+      permission: griefprevention.claims
+    claimexplosions:
+      description: '§eBulunduğunuz konumda patlayıcı etkileri açar/kapatır.'
+      usage: '§6Kullanım §7§l»§c /ClaimExplosions'
+      permission: griefprevention.claims
+      aliases: claimexplosion
+    softmute:
+      description: '§eBelirtilen oyuncunun mesajlarının diğer softmute uygulanan oyunculara gitmesini sağlar.'
+      usage: '§6Kullanım §7§l»§c /SoftMute <oyuncu>'
+      permission: griefprevention.softmute
+    gpreload:
+      description: '§eEklentiyi yeniler, eklenti tamamiyle yenilenmez. Bunun için yeniden başlatma gerekir.'
+      usage: '§6Kullanım §7§l»§c /gpreload'
+      aliases: [tapuyenile]
+      permission: griefprevention.reload
+    givepet:
+      description: '§eEğitilmiş veya evcilleştirilmiş hayvanı başkasına vermeyi sağlar.'
+      usage: '§6Kullanım §7§l»§c /GivePet <oyuncu>'
+      permission: griefprevention.givepet
+    gpblockinfo:
+      description: '§eYöneticiye elindeki blok hakkında bulunduğu dünyada teknik bilgi verir.'
+      usage: '§6Kullanım §7§l»§c /GPBlockInfo'
+      permission: griefprevention.gpblockinfo
+    ignoreplayer:
+      description: '§eOyuncunun sohbet mesajlarını engeller.'
+      usage: '§6Kullanım §7§l»§c /IgnorePlayer <oyuncu>'
+      aliases: [ignore]
+      permission: griefprevention.ignore
+    unignoreplayer:
+      description: '§eOyuncunun sohbet mesajlarını engellemesini kaldırır.'
+      usage: '§6Kullanım §7§l»§c /Unignore <oyuncu>'
+      aliases: [unignore]
+      permission: griefprevention.ignore
+    ignoredplayerlist:
+      description: '§eSohbet mesajları engellenmiş oyuncuları listeler.'
+      usage: '§6Kullanım §7§l»§c /IgnoredPlayerList'
+      aliases: []
+      permission: griefprevention.ignore
+    separate:
+      description: '§eBelirtilen 2 oyuncunun birbirlerini engellemesini sağlar.'
+      usage: '§6Kullanım §7§l»§c /Separate <oyuncu1> <oyuncu2>'
+      permission: griefprevention.separate
+    unseparate:
+      description: '§eBelirtilen 2 oyuncunun birbirlerini engellemesini kaldırır.'
+      usage: '§6Kullanım §7§l»§c /UnSeparate <oyuncu1> <oyuncu2>'
+      permission: griefprevention.separate
+    claimbook:
+      description: '§eBelirtilen oyuncuya tapu atma yardım kitabı verir.'
+      usage: '§6Kullanım §7§l»§c /ClaimBook <oyuncu>'
+      permission: griefprevention.claimbook
+permissions:
+    griefprevention.createclaims:
+        description: Grants permission to create claims.
+        default: true
+    griefprevention.admin.*:
+        description: Grants all administrative functionality.
+        children:
+            griefprevention.restorenature: true
+            griefprevention.restorenatureaggressive: true
+            griefprevention.ignoreclaims: true
+            griefprevention.adminclaims: true
+            griefprevention.adjustclaimblocks: true
+            griefprevention.deleteclaims: true
+            griefprevention.spam: true
+            griefprevention.lava: true
+            griefprevention.eavesdrop: true
+            griefprevention.deathblow: true
+            griefprevention.softmute: true
+            griefprevention.reload: true
+            griefprevention.visualizenearbyclaims: true
+            griefprevention.overrideclaimcountlimit: true
+            griefprevention.transferclaim: true
+            griefprevention.claimslistother: true
+            griefprevention.siegeimmune: true
+            griefprevention.separate: true
+            griefprevention.eavesdropsigns: true
+            griefprevention.claimbook: true
+            griefprevention.notignorable: true
+            griefprevention.seeinactivity: true
+            griefprevention.eavesdropimmune: true
+            griefprevention.deleteclaimsinworld: true
+            griefprevention.siegeteleport: true
+            griefprevention.unlockothersdrops: true
+            griefprevention.seeclaimsize: true
+    griefprevention.siegeimmune:
+        description: Makes a player immune to /Siege.
+        default: op
+    griefprevention.givepet:
+        description: Grants permission to use /GivePet.
+        default: true
+    griefprevention.siege:
+        description: Grants permission to use /Siege.
+        default: true
+    griefprevention.unlockdrops:
+        description: Grants permission to use /UnlockDrops.
+        default: true
+    griefprevention.unlockothersdrops:
+        description: Grants permission to use /UnlockDrops for other players.
+        default: op
+    griefprevention.trapped:
+        description: Grants permission to use /Trapped.
+        default: true
+    griefprevention.claimslistother:
+        description: Grants permission to use /ClaimsList to get another player's information.
+        default: op
+    griefprevention.restorenature:
+        description: Grants permission to use /RestoreNature.
+        default: op
+    griefprevention.transferclaim:
+        description: Grants permission to use /TransferClaim.
+        default: op
+    griefprevention.ignoreclaims:
+        description: Grants permission to use /IgnoreClaims.
+        default: op
+    griefprevention.adminclaims:
+        description: Grants permission to create administrative claims.
+        default: op
+    griefprevention.deleteclaims:
+        description: Grants permission to delete other players' claims.
+        default: op
+    griefprevention.deleteclaimsinworld:
+        description: Not used.  DeleteClaimsInWorld must be executed at the server console.
+        default: op
+    griefprevention.adjustclaimblocks:
+        description: Grants permission to add or remove bonus blocks from a player's account.
+        default: op
+    griefprevention.spam:
+        description: Grants permission to log in, send messages, and send commands rapidly.
+        default: op
+    griefprevention.lava:
+        description: Grants permission to place lava near the surface and outside of claims.
+        default: op
+    griefprevention.eavesdrop:
+        description: Allows a player to see whispered chat messages (/tell) and softmuted messages.
+        default: op
+    griefprevention.eavesdropsigns:
+        description: Allows a player to see sign placements as chat messages.
+        default: op
+    griefprevention.restorenatureaggressive:
+        description: Grants access to /RestoreNatureAggressive and /RestoreNatureFill.
+        default: op
+    griefprevention.deathblow:
+        description: Grants access to /DeathBlow.
+        default: op
+    griefprevention.reload:
+        description: Grants access to /gpreload.
+        default: op
+    griefprevention.softmute:
+        description: Grants access to /SoftMute.
+        default: op
+    griefprevention.claims:
+        description: Grants access to claim-related slash commands.
+        default: true
+    griefprevention.buysellclaimblocks:
+        description: Grants access to claim block buy/sell commands.
+        default: true
+    griefprevention.visualizenearbyclaims:
+        description: Allows a player to see all nearby claims at once.
+        default: op
+    griefprevention.seeclaimsize:
+        description: Allows a player to see claim size for other players claims when right clicking with investigation tool
+        default: op
+    griefprevention.gpblockinfo:
+        description: Grants access to /GPBlockInfo.
+        default: op
+    griefprevention.overrideclaimcountlimit:
+        description: Allows players to create more claims than the limit specified by the config.
+        default: op
+    griefprevention.separate:
+        description: Grants access to /Separate and /UnSeparate.
+        default: op
+    griefprevention.ignore:
+        description: Grants access to /Ignore, /Unignore, and /IgnoreList
+        default: true
+    griefprevention.claimbook:
+        description: Grants access to /ClaimBook.
+        default: op
+    griefprevention.notignorable:
+        description: Players with this permission can't be ignored.
+        default: op
+    griefprevention.seeinactivity:
+        description: Players with this permission can see how long a claim owner has been offline.
+        default: op
+    griefprevention.eavesdropimmune:
+        description: Players with this permission can't have their private messages eavesdropped.
+        default: op
+    griefprevention.fasteraccrual:
+        description: Players with this permission accrue claim blocks at the faster rate specified in the config file.
+        default: false
+    griefprevention.fastestaccrual:
+        description: Players with this permission accrue claim blocks at the fastest rate specified in the config file.
+        default: false
+    griefprevention.moreaccrued:
+        description: Players with this permission can accrue more claim blocks (limit specified in the config file).
+        default: false
+    griefprevention.mostaccrued:
+        description: Players with this permission can accrue more claim blocks (limit specified in the config file).
+        default: false
+    griefprevention.siegeteleport:
+        description: Players with this permission can teleport into and out of besieged areas.
+        default: op
