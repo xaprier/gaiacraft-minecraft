@@ -1,0 +1,286 @@
+# EssentialsX kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - name[:durability] amount [enchantment:level]... [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# To make the kit execute a command, add /<command> to the items list. Use {USERNAME} to specify the player receiving the kit.
+# {PLAYER} will show the player's displayname instead of username.
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+#
+# In addition, you can also organize your kits into separate files under the `kits` subdirectory.
+# Essentials will treat all .yml files in the `kits` subdirectory as kits files, and will add any kits from those files along with the kits in `kits.yml`.
+# Any file in the `kits` subdirectory must be formatted in the same way as this file. This allows you to define multiple kits in each file.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+kits:
+  'Başlangıç':
+    delay: 240
+    items:
+      - WOODEN_PICKAXE 1
+      - COOKED_BEEF 2
+      - TORCH 4
+  'Tapu':
+    delay: 300
+    items:
+      - GOLDEN_SHOVEL 1 name:&b&l⚝_&6Tapu_Küreği
+      - STICK 1 name:&b&l⚝_&6Tapu_Kontrol_Çubuğu
+  'RHEIA':
+    delay: 7200
+    items:
+      - CHAINMAIL_HELMET 1 name:&b&l⚝_&6Rheia
+      - CHAINMAIL_CHESTPLATE 1 name:&b&l⚝_&6Rheia
+      - CHAINMAIL_LEGGINGS 1 name:&b&l⚝_&6Rheia
+      - CHAINMAIL_BOOTS 1 name:&b&l⚝_&6Rheia
+      - STONE_SWORD 1 name:&b&l⚝_&6Rheia
+      - STONE_AXE 1 name:&b&l⚝_&6Rheia
+      - STONE_PICKAXE 1 name:&b&l⚝_&6Rheia
+      - STONE_SHOVEL 1 name:&b&l⚝_&6Rheia
+      - COOKED_BEEF 8
+      - IRON_INGOT 3
+  'KRIOS':
+    delay: 14400
+    items:
+      - IRON_HELMET 1 name:&b&l⚝_&6Krios
+      - IRON_CHESTPLATE 1 name:&b&l⚝_&6Krios
+      - IRON_LEGGINGS 1 name:&b&l⚝_&6Krios
+      - IRON_BOOTS 1 name:&b&l⚝_&6Krios
+      - IRON_SWORD 1 name:&b&l⚝_&6Krios
+      - IRON_AXE 1 name:&b&l⚝_&6Krios
+      - IRON_PICKAXE 1 name:&b&l⚝_&6Krios
+      - IRON_SHOVEL 1 name:&b&l⚝_&6Krios
+      - COOKED_BEEF 10
+      - IRON_INGOT 6
+  'TETHYS':
+    delay: 28800
+    items:
+      - IRON_HELMET 1 name:&b&l⚝_&6Tethys unbreaking:1 protection:1
+      - IRON_CHESTPLATE 1 name:&b&l⚝_&6Tethys unbreaking:1 protection:1
+      - IRON_LEGGINGS 1 name:&b&l⚝_&6Tethys unbreaking:1 protection:1
+      - IRON_BOOTS 1 name:&b&l⚝_&6Tethys unbreaking:1 protection:1
+      - IRON_SWORD 1 name:&b&l⚝_&6Tethys sharpness:1 protection:1
+      - IRON_AXE 1 name:&b&l⚝_&6Tethys efficiency:1 protection:1
+      - IRON_PICKAXE 1 name:&b&l⚝_&6Tethys efficiency:1 protection:1
+      - IRON_SHOVEL 1 name:&b&l⚝_&6Tethys efficiency:1 protection:1
+      - COOKED_BEEF 12
+      - IRON_INGOT 9
+  'THEIA':
+    delay: 43200
+    items:
+      - IRON_HELMET 1 name:&b&l⚝_&6Theia unbreaking:2 protection:2
+      - IRON_CHESTPLATE 1 name:&b&l⚝_&6Theia unbreaking:2 protection:2
+      - IRON_LEGGINGS 1 name:&b&l⚝_&6Theia unbreaking:2 protection:2
+      - IRON_BOOTS 1 name:&b&l⚝_&6Theia unbreaking:2 protection:2
+      - IRON_SWORD 1 name:&b&l⚝_&6Theia sharpness:2 unbreaking:2
+      - IRON_AXE 1 name:&b&l⚝_&6Theia efficiency:2 unbreaking:2
+      - IRON_PICKAXE 1 name:&b&l⚝_&6Theia efficiency:2 unbreaking:2
+      - IRON_SHOVEL 1 name:&b&l⚝_&6Theia efficiency:2 unbreaking:2
+      - COOKED_BEEF 14
+      - IRON_INGOT 12
+  'ARES':
+    delay: 43200
+    items:
+      - IRON_HELMET 1 name:&b&l⚝_&6Ares unbreaking:3 protection:3
+      - IRON_CHESTPLATE 1 name:&b&l⚝_&6Ares unbreaking:3 protection:3
+      - IRON_LEGGINGS 1 name:&b&l⚝_&6Ares unbreaking:3 protection:3
+      - IRON_BOOTS 1 name:&b&l⚝_&6Ares unbreaking:3 protection:3
+      - IRON_SWORD 1 name:&b&l⚝_&6Ares sharpness:3 unbreaking:3
+      - IRON_AXE 1 name:&b&l⚝_&6Ares efficiency:3 unbreaking:3
+      - IRON_PICKAXE 1 name:&b&l⚝_&6Ares efficiency:3 unbreaking:3
+      - IRON_SHOVEL 1 name:&b&l⚝_&6Ares efficiency:3 unbreaking:3
+      - COOKED_BEEF 16
+      - IRON_INGOT 15
+  'HADES':
+    delay: 86400
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&6Hades unbreaking:2 protection:2
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&6Hades unbreaking:2 protection:2
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&6Hades unbreaking:2 protection:2
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&6Hades unbreaking:2 protection:2
+      - DIAMOND_SWORD 1 name:&b&l⚝_&6Hades sharpness:2 unbreaking:2
+      - DIAMOND_AXE 1 name:&b&l⚝_&6Hades efficiency:2 unbreaking:2
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&6Hades efficiency:2 unbreaking:2
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&6Hades efficiency:2 unbreaking:2
+      - COOKED_BEEF 18
+      - DIAMOND 5
+      - IRON_INGOT 18
+  'ZEUS':
+    delay: 86400
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&6Zeus unbreaking:3 protection:3
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&6Zeus unbreaking:3 protection:3
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&6Zeus unbreaking:3 protection:3
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&6Zeus unbreaking:3 protection:3
+      - DIAMOND_SWORD 1 name:&b&l⚝_&6Zeus sharpness:3 unbreaking:3
+      - DIAMOND_AXE 1 name:&b&l⚝_&6Zeus efficiency:3 unbreaking:3
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&6Zeus efficiency:3 unbreaking:3
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&6Zeus efficiency:3 unbreaking:3
+      - BOW 1 name:&b&l⚝_&6Zeus
+      - ARROW 64
+      - COOKED_BEEF 20
+      - DIAMOND 8
+      - IRON_INGOT 21
+  'ThemisVIP':
+    delay: 172800
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&3&lT&6VIP unbreaking:3 protection:4 thorns:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&3&lT&6VIP unbreaking:3 protection:4 thorns:1
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&3&lT&6VIP unbreaking:3 protection:4 thorns:1
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&3&lT&6VIP unbreaking:3 protection:4 thorns:1
+      - DIAMOND_SWORD 1 name:&b&l⚝_&3&lT&6VIP sharpness:4 unbreaking:3
+      - DIAMOND_AXE 1 name:&b&l⚝_&3&lT&6VIP efficiency:4 unbreaking:3
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&3&lT&6VIP efficiency:4 unbreaking:3
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&3&lT&6VIP efficiency:4 unbreaking:3
+      - BOW 1 name:&b&l⚝_&3&lT&6VIP power:1 infinity:1 punch:1
+      - ARROW 64
+      - COOKED_BEEF 32
+      - GOLDEN_APPLE 2
+      - IRON_INGOT 8
+      - DIAMOND 2
+      - GOLD_INGOT 2
+  'HyperionVIP':
+    delay: 172800
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&9&lH&6VIP unbreaking:3 protection:4 thorns:1 aquaaffinity:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&9&lH&6VIP unbreaking:3 protection:4 thorns:2
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&9&lH&6VIP unbreaking:3 protection:4 thorns:1
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&9&lH&6VIP unbreaking:3 protection:4 thorns:1 featherfalling:1
+      - DIAMOND_SWORD 1 name:&b&l⚝_&9&lH&6VIP sharpness:4 unbreaking:3 fireaspect:1 looting:1
+      - DIAMOND_AXE 1 name:&b&l⚝_&9&lH&6VIP efficiency:4 unbreaking:3 fortune:1
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&9&lH&6VIP efficiency:4 unbreaking:3 fortune:1
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&9&lH&6VIP efficiency:4 unbreaking:3 fortune:1
+      - BOW 1 name:&b&l⚝_&9&lH&6VIP power:2 infinity:1 punch:1 flame:1
+      - ARROW 64
+      - COOKED_BEEF 48
+      - GOLDEN_APPLE 5
+      - IRON_INGOT 16
+      - DIAMOND 4
+      - GOLD_INGOT 4
+  'KronosVIP':
+    delay: 245600
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&d&lK&6VIP unbreaking:3 protection:4 thorns:2 aquaaffinity:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&d&lK&6VIP unbreaking:3 protection:4 thorns:2
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&d&lK&6VIP unbreaking:3 protection:4 thorns:2
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&d&lK&6VIP unbreaking:3 protection:4 thorns:1 featherfalling:2
+      - DIAMOND_SWORD 1 name:&b&l⚝_&d&lK&6VIP sharpness:4 unbreaking:3 fireaspect:1 looting:2
+      - DIAMOND_AXE 1 name:&b&l⚝_&d&lK&6VIP efficiency:4 unbreaking:3 fortune:2
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&d&lK&6VIP efficiency:4 unbreaking:3 fortune:2
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&d&lK&6VIP efficiency:4 unbreaking:3 fortune:2
+      - BOW 1 name:&b&l⚝_&d&lK&6VIP power:3 infinity:1 punch:2 flame:1
+      - ARROW 64
+      - COOKED_BEEF 64
+      - GOLDEN_APPLE 6
+      - IRON_INGOT 30
+      - DIAMOND 14
+      - GOLD_INGOT 12
+  'UranusVIP':
+    delay: 245600
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&b&lU&6VIP unbreaking:3 protection:4 thorns:2 aquaaffinity:1 respiration:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&b&lU&6VIP unbreaking:3 protection:4 thorns:2
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&b&lU&6VIP unbreaking:3 protection:4 thorns:2
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&b&lU&6VIP unbreaking:3 protection:4 thorns:1 featherfalling:3
+      - DIAMOND_SWORD 1 name:&b&l⚝_&b&lU&6VIP sharpness:4 unbreaking:3 fireaspect:2 looting:2
+      - DIAMOND_AXE 1 name:&b&l⚝_&b&lU&6VIP efficiency:4 unbreaking:3 fortune:3
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&b&lU&6VIP efficiency:4 unbreaking:3 fortune:3
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&b&lU&6VIP efficiency:4 unbreaking:3 fortune:3
+      - BOW 1 name:&b&l⚝_&b&lU&6VIP power:4 infinity:1 punch:2 flame:1
+      - ARROW 64
+      - COOKED_BEEF 64
+      - GOLDEN_APPLE 7
+      - IRON_INGOT 20
+      - DIAMOND 6
+      - GOLD_INGOT 6
+  'GaiaVIP':
+    delay: 245600
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&4&lG&6VIP unbreaking:3 protection:4 thorns:2 aquaaffinity:1 respiration:3 mending:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&4&lG&6VIP unbreaking:3 protection:4 thorns:2 mending:1
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&4&lG&6VIP unbreaking:3 protection:4 thorns:2 mending:1
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&4&lG&6VIP unbreaking:3 protection:4 thorns:2 featherfalling:3 mending:1
+      - DIAMOND_SWORD 1 name:&b&l⚝_&4&lG&6VIP sharpness:5 unbreaking:3 fireaspect:2 looting:2 mending:1
+      - DIAMOND_AXE 1 name:&b&l⚝_&4&lG&6VIP efficiency:5 unbreaking:3 fortune:3 mending:1
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&4&lG&6VIP efficiency:5 unbreaking:3 fortune:3 mending:1
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&4&lG&6VIP efficiency:5 unbreaking:3 fortune:3 mending:1
+      - BOW 1 name:&b&l⚝_&4&lG&6VIP power:5 infinity:1 punch:2 flame:1 mending:1
+      - ARROW 64
+      - COOKED_BEEF 64
+      - GOLDEN_APPLE 8
+      - IRON_INGOT 32
+      - DIAMOND 10
+      - GOLD_INGOT 10
+  'Admin':
+    delay: 0
+    items:
+    - STICK 1
+    - LEATHER 1
+    - GOLDEN_SHOVEL 1
+    - WOODEN_AXE 1
+    - DIAMOND_PICKAXE 1 silktouch:1
+    - DIAMOND_SWORD 1 sharpness:50
+  'HyperionAlet':
+    items:
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&9Hyperion_&6Kazmalısı efficiency:4 fortune:2 unbreaking:3 mending:1
+      - DIAMOND_AXE 1 name:&b&l⚝_&9Hyperion_&6Baltalısı efficiency:4 fortune:2 unbreaking:3 mending:1
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&9Hyperion_&6Küreklisi efficiency:4 fortune:2 unbreaking:3 mending:1
+  'HyperionZırh':
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&9Hyperion_&6Zırhlısı protection:3 unbreaking:3 thorns:2 aquaaffinity:1 respiration:2 mending:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&9Hyperion_&6Zırhlısı protection:3 unbreaking:3 thorns:2 mending:1
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&9Hyperion_&6Zırhlısı protection:3 unbreaking:3 thorns:2 mending:1
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&9Hyperion_&6Zırhlısı protection:3 unbreaking:3 thorns:2 depthstrider:2 featherfalling:4 soulspeed:2 mending:1
+  'HyperionSavaş':
+    items:
+      - DIAMOND_SWORD 1 name:&b&l⚝_&9Hyperion_&6Savaşçısı sharpness:4 unbreaking:3 mending:1 baneofarthropods:4 fireaspect:2 knockback:2 looting:1 smite:4 sweepingedge:3
+      - BOW 1 name:&b&l⚝_&9Hyperion_&6Savaşçısı power:4 punch:2 flame:1 infinity:1 unbreaking:3 mending:1
+      - SHIELD 1 name:&b&l⚝_&9Hyperion_&6Savaşçısı unbreaking:3 mending:1
+  'KronosAlet':
+    items:
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&dKronos_&6Kazmalısı efficiency:5 fortune:3 unbreaking:3 mending:1
+      - DIAMOND_AXE 1 name:&b&l⚝_&dKronos_&6Baltalısı efficiency:5 fortune:3 unbreaking:3 mending:1
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&dKronos_&6Küreklisi efficiency:5 fortune:3 unbreaking:3 mending:1
+  'KronosZırh':
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&dKronos_&6Zırhlısı protection:4 unbreaking:3 thorns:3 aquaaffinity:1 respiration:3 mending:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&dKronos_&6Zırhlısı protection:4 unbreaking:3 thorns:3 mending:1
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&dKronos_&6Zırhlısı protection:4 unbreaking:3 thorns:3 mending:1
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&dKronos_&6Zırhlısı protection:4 unbreaking:3 thorns:3 depthstrider:3 featherfalling:5 soulspeed:3 mending:1
+  'KronosSavaş':
+    items:
+      - DIAMOND_SWORD 1 name:&b&l⚝_&dKronos_&6Savaşçısı sharpness:5 unbreaking:3 mending:1 baneofarthropods:5 fireaspect:2 knockback:2 looting:2 smite:5 sweepingedge:3
+      - BOW 1 name:&b&l⚝_&dKronos_&6Savaşçısı power:5 punch:2 flame:1 infinity:1 unbreaking:3 mending:1
+      - SHIELD 1 name:&b&l⚝_&dKronos_&6Savaşçısı unbreaking:3 mending:1
+  'UranusAlet':
+    items:
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&bUranus_&6Kazmalısı efficiency:6 fortune:4 unbreaking:4 mending:1
+      - DIAMOND_AXE 1 name:&b&l⚝_&bUranus_&6Baltalısı efficiency:6 fortune:4 unbreaking:4 mending:1
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&bUranus_&6Küreklisi efficiency:6 fortune:4 unbreaking:4 mending:1
+  'UranusZırh':
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&bUranus_&6Zırhlısı protection:5 unbreaking:4 thorns:4 aquaaffinity:2 respiration:4 mending:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&bUranus_&6Zırhlısı protection:5 unbreaking:4 thorns:4 mending:1
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&bUranus_&6Zırhlısı protection:5 unbreaking:4 thorns:4 mending:1
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&bUranus_&6Zırhlısı protection:5 unbreaking:4 thorns:4 depthstrider:4 featherfalling:6 soulspeed:4 mending:1
+  'UranusSavaş':
+    items:
+      - DIAMOND_SWORD 1 name:&b&l⚝_&bUranus_&6Savaşçısı sharpness:6 unbreaking:4 mending:1 baneofarthropods:6 fireaspect:3 knockback:3 looting:3 smite:6 sweepingedge:4
+      - BOW 1 name:&b&l⚝_&bUranus_&6Savaşçısı power:6 punch:3 flame:1 infinity:1 unbreaking:4 mending:1
+      - SHIELD 1 name:&b&l⚝_&bUranus_&6Savaşçısı unbreaking:4 mending:1
+  'GaiaAlet':
+    items:
+      - DIAMOND_PICKAXE 1 name:&b&l⚝_&4Gaia_&6Kazmalısı efficiency:7 fortune:5 unbreaking:5 mending:1
+      - DIAMOND_AXE 1 name:&b&l⚝_&4Gaia_&6Baltalısı efficiency:7 fortune:5 unbreaking:5 mending:1
+      - DIAMOND_SHOVEL 1 name:&b&l⚝_&4Gaia_&6Küreklisi efficiency:7 fortune:5 unbreaking:5 mending:1
+  'GaiaZırh':
+    items:
+      - DIAMOND_HELMET 1 name:&b&l⚝_&4Gaia_&6Zırhlısı protection:6 unbreaking:5 thorns:5 aquaaffinity:3 respiration:5 mending:1
+      - DIAMOND_CHESTPLATE 1 name:&b&l⚝_&4Gaia_&6Zırhlısı protection:6 unbreaking:5 thorns:5 mending:1
+      - DIAMOND_LEGGINGS 1 name:&b&l⚝_&4Gaia_&6Zırhlısı protection:6 unbreaking:5 thorns:5 mending:1
+      - DIAMOND_BOOTS 1 name:&b&l⚝_&4Gaia_&6Zırhlısı protection:6 unbreaking:5 thorns:5 depthstrider:5 featherfalling:7 soulspeed:5 mending:1
+  'GaiaSavaş':
+    items:
+      - DIAMOND_SWORD 1 name:&b&l⚝_&4Gaia_&6Savaşçısı sharpness:7 unbreaking:5 mending:1 baneofarthropods:7 fireaspect:4 knockback:4 looting:4 smite:7 sweepingedge:5
+      - BOW 1 name:&b&l⚝_&4Gaia_&6Savaşçısı power:7 punch:4 flame:1 infinity:1 unbreaking:5 mending:1
+      - SHIELD 1 name:&b&l⚝_&4Gaia_&6Savaşçısı unbreaking:5 mending:1
